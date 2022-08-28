@@ -1,0 +1,142 @@
+.about {
+  width: 100%;
+  background: #393F5A;
+  background-image: url(about_parts.svg);
+  background-position: 0 250px;
+
+  &__triangle {
+    background-image: linear-gradient(to left bottom, #393F5A 0%, #393F5A 50%, transparent 50%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    &-box {
+      width: 100%;
+      height: 300px;
+      position: absolute;
+    }
+  }
+
+  &__number {
+    position: relative;
+    height: 80px;
+
+    &-text {
+      font-size: 64px;
+      text-align: center;
+      color: #FFFFFF;
+      margin: 0;
+      position: absolute;
+      top: -30px;
+      left: calc(50% - 12px);
+
+      &--1 {
+        left: calc(50% - 12px);
+      }
+
+      &--2 {
+        left: calc(50% - 18px);
+      }
+
+      &--3 {
+        left: calc(50% - 19px);
+      }
+
+      &--4 {
+        left: calc(50% - 24px);
+      }
+    }
+
+    img {
+      width: 120px;
+      left: calc(50% - 60px);
+      top: -60px;
+      position: absolute;
+    }
+  }
+
+  &__gradient {
+    background: linear-gradient(180deg, #202742 0%, #393F5A 100%);
+    min-height: 250px;
+  }
+
+  &__separator {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, #0075FF 0%, #445372 50%, #0075FF 100%);
+  }
+
+  &__works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 130px;
+    margin-top: -200px;
+
+    img {
+      max-width: 200px;
+
+      @include tablet {
+        max-width: 200px;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 42px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 30px 0 0;
+
+    &--small {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 40px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
+
+  &__steps {
+    display: flex;
+    max-width: 1260px;
+    margin: 0 auto 150px;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 25%;
+
+    @include tablet {
+      height: calc(100vh - 160px);
+      width: auto;
+    }
+
+    svg {
+      margin-top: auto;
+
+      @include tablet {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #B9B9B9;
+    margin: 10px 0 40px;
+    max-width: 240px;
+  }
+}

@@ -1,0 +1,143 @@
+.mobile-menu {
+  z-index: 60;
+  display: none;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0;
+    max-width: 400px;
+    margin: auto auto 0;
+    width: calc(100% - 40px);
+  }
+
+  &__button {
+    background: linear-gradient(93.74deg, #09BECA -12.52%, #9A68F3 125.6%);
+    border-radius: 10px;
+    border: 0;
+    padding: 16px 0 14px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  &__button-inverse {
+    background: transparent;
+    border-radius: 10px;
+    border: 0;
+    padding: 16px 0 14px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: white;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+  }
+
+  @include tablet {
+    z-index: 101;
+    display: block;
+    padding: 32px 20px 32px 30px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 36px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.15s;
+    border-radius: 2px;
+  }
+
+  &--open {
+    .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+      transform: rotate(-45deg) translate(-6px, 6px);
+    }
+    
+    .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+  }
+
+  &__overlay {
+    z-index: 50;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .15s linear;
+    margin-top: 100px;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--visible {
+      overflow: auto;
+      pointer-events: all;
+      opacity: 1;
+    }
+    
+    background: $body-background-color;
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .menu-wrapper {
+      margin: 0;
+      max-width: none;
+      position: relative;
+
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+
+      ul {
+        flex-direction: column;
+        text-align: left;
+        height: max-content;
+      }
+  
+      a {
+        text-align: center;
+        line-height: 60px;
+        padding: 0;
+        height: max-content;
+        width: 100%;
+
+        @include tablet {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .social-wrapper {
+      display: flex;
+      height: max-content;
+      margin: 0 auto 30px;
+      max-width: max-content;
+      padding: 20px 0;
+
+      svg {
+        width: 40px;
+      }
+    }
+
+    .social-icon {
+      padding: 0 12.5px;
+    }
+  }
+}

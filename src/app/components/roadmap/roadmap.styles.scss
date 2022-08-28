@@ -1,0 +1,177 @@
+.roadmap {
+  background: linear-gradient(167.23deg, #665DDD 0%, #B878F2 21.35%, #9DA4EE 43.23%, #89C4EB 63.54%, #7CBBEB 82.81%, #4296EB 100%);
+  width: 100%;
+  height: max-content;
+
+  &__content {
+    position: relative;
+    max-width: 1260px;
+    padding: 0 30px 50px 180px;
+    margin: 300px auto 0;
+
+    @include tablet {
+      padding: 0 30px 50px;
+    }
+  }
+
+  &__tree {
+    position: absolute;
+    left: 50px;
+    top: -400px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 62px;
+    color: #FFFFFF;
+    max-width: 500px;
+    margin: 0;
+
+    @include tablet {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+
+  &__platform {
+    position: relative;
+
+    svg {
+      position: absolute;
+      left: -58px;
+      top: 65px;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: white;
+    border-bottom: 2px solid #393F5A;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 10px;
+
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    max-width: 430px;
+    color: white;
+    font-size: 26px;
+    line-height: 39px;
+    margin: 0;
+
+    @include tablet {
+      font-size: 18px;
+      line-height: 32px;
+      max-width: initial;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__item {
+    display: flex;
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    &-content {
+      align-items: center;
+      display: flex;
+    }
+    
+    &-image {
+      max-width: 640px;
+      margin-left: auto;
+      padding-left: 50px;
+
+      @include tablet {
+        margin: 0;
+        padding: 0;
+        max-width: initial;
+      }
+
+      img {
+        position: relative;
+        width: 100%;
+      }
+    }
+
+    @include tablet {
+
+    }
+
+    svg {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--1 {
+      margin-top: 80px;
+
+      svg {
+        position: absolute;
+        left: 131px;
+        top: 463px;
+      }
+    }
+
+    &--2 {
+      margin-top: 134px;
+
+      @include tablet {
+        margin-top: 40px;
+      }
+
+      svg {
+        position: absolute;
+        left: 131px;
+        top: 1108px;
+      }
+    }
+
+    &--3 {
+      margin-top: 202px;
+
+      @include tablet {
+        margin-top: 40px;
+      }
+
+      svg {
+        position: absolute;
+        left: 131px;
+        top: 1704px;
+      }
+    }
+
+    &--4 {
+      margin-top: 202px;
+
+      @include tablet {
+        margin-top: 40px;
+      }
+
+      svg {
+        position: absolute;
+        left: 131px;
+        top: 2266px;
+      }
+    }
+  }
+}
