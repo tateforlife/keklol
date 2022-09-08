@@ -84,7 +84,7 @@
       max-width: 200px;
 
       transform: scale(0.5);
-      transition: transform 0.25s, opacity 0.25s;
+      transition: transform 01s, opacity 01s;
       opacity: .25;
 
       @include tablet {
@@ -112,7 +112,7 @@
     margin: 30px 0 0;
 
     opacity: 1;
-    transition: opacity .25s;
+    transition: opacity 1s;
 
     &--small {
       font-weight: 700;

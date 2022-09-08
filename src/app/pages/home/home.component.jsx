@@ -8,6 +8,7 @@ import Header from '../../components/header/header.component';
 import Welcome from '../../components/welcome/welcome.component';
 import Roadmap from '../../components/roadmap/roadmap.component';
 import Partners from '../../components/partners/partners.component';
+import Carousel from '../../components/carousel/carousel.component';
 // import Larry from '../../components/larry/larry.component';
 // import About from '../../components/about/about.component';
 // import Footer from '../../components/footer/footer.component';
@@ -28,6 +29,7 @@ const HomePageComponent = ({
         setCurrentAccount={setCurrentAccount}
       />
       <Welcome />
+      <Carousel />
       <Roadmap />
       <Partners />
     </section>
