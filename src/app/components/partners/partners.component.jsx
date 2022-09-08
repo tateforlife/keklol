@@ -3,6 +3,11 @@ import React from 'react';
 import './partners.styles.scss'
 
 const Partners = () => {
+  React.useEffect(() => {
+    const el = document.getElementById('logo-box');
+    el.scrollLeft += 100;
+  }, []);
+
   return (
     <div className="partners">
       <div className="partners__wrapper">
@@ -29,7 +34,7 @@ const Partners = () => {
               Private Sale
             </button>
           </div>
-          <div className="partners__logos">
+          <div className="partners__logos" id="logo-box">
             <div className="partners__logo">
               <div className="partners__logo-wrapper">
                 <svg width="97" height="107" viewBox="0 0 97 107" fill="none" xmlns="http://www.w3.org/2000/svg">
