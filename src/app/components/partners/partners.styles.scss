@@ -15,6 +15,28 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: end;
+
+    @include tablet {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      display: initial;
+      margin: 30px 0;
+
+      -ms-overflow-style: none; /* for Internet Explorer, Edge */
+      scrollbar-width: none; /* for Firefox */
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 
   &__logo {
@@ -26,6 +48,22 @@
     justify-content: center;
     align-items: center;
     transition: all .25s;
+
+    @include tablet {
+      display: inline-block;
+      height: 180px;
+      width: auto;
+      padding: 20px;
+      min-width: 180px;
+
+      &:not(:last-of-type) {
+        margin-right: 10px;
+      }
+
+      svg {
+        // max-width: 90px;
+      }
+    }
 
     &:hover {
       background: white;
@@ -46,6 +84,11 @@
     display: flex;
     width: 100%;
     gap: 65px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   &__text {
@@ -53,9 +96,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include tablet {
+      order: 1;
+    }
   }
 
   &__logos {
+    @include tablet {
+      order: 0;
+    }
   }
 
   &__wrapper {
@@ -66,6 +116,10 @@
     max-width: 1260px;
     width: calc(100% - 60px);
     padding: 0 30px;
+
+    & > svg {
+      width: 65px;
+    }
 
     @include tablet {
       width: calc(100% - 40px);
@@ -80,6 +134,7 @@
     line-height: 30px;
     position: relative;
     width: max-content;
+    position: relative;
 
     @include tablet {
       font-size: 18px;
@@ -92,6 +147,11 @@
     font-size: 18px;
     line-height: 27px;
     margin: 30px 0 0;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 24px;
+    }
 
     span {
       color: #637298;
@@ -108,6 +168,12 @@
     margin: 30px 0 50px;
     text-align: center;
 
+    @include tablet {
+      font-size: 36px;
+      line-height: 42px;
+      margin: 5px 0 0;
+    }
+
     &-small {
       font-weight: 700;
       font-size: 40px;
@@ -117,8 +183,8 @@
       max-width: initial;
   
       @include tablet {
-        font-size: 36px;
-        line-height: 42px;
+        font-size: 32px;
+        line-height: 32px;
       }
     }
 
@@ -131,7 +197,11 @@
     }
   }
   
-  svg {
-    
+  .more-arrow {
+    display: block;
+    right: -16px;
+    top: 6px;
+    position: absolute;
+    width: 8px;
   }
 }

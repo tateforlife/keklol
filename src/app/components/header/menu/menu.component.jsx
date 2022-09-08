@@ -10,13 +10,13 @@ const Menu = () => {
           const event = new Event('kek');
           document.dispatchEvent(event);
         }}>
-          <a href="#launchpad">Launchpad</a>
+          <a href="#whitepaper">Whitepaper</a>
         </li>
         <li onClick={() => {
           const event = new Event('kek');
           document.dispatchEvent(event);
         }}>
-          <a href="/#staking">Staking</a>
+          <a href="/#features">Key Features</a>
         </li>
         <li onClick={() => {
           const event = new Event('kek');

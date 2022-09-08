@@ -17,12 +17,21 @@
       flex-wrap: nowrap;
       height: 100%;
       margin: 0;
+      align-items: center;
+
+      @include tablet {
+        align-items: initial;
+      }
     }
 
     li {
       text-align: center;
-      display: inline-block;
+      display: flex;
       width: 100%;
+
+      @include tablet {
+        display: inline-block;
+      }
     }
 
     a {

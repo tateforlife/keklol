@@ -8,16 +8,14 @@ const Welcome = () => {
     <div className='welcome'>
       <div className="welcome__wrapper">
         <div className="welcome__content">
-          <h1 className="welcome__heading">Etokenflip Web3 Platform</h1>
+          <h1 className="welcome__heading">Coin Flip <br/> Web3 Platform</h1>
           <p className="welcome__description">
-            By starting on the Etokenflip we hope to become the biggest
-            crypto gaming provider in WEB 3.0 showing that gaming
-            is affordable and profitable for any person, a untethered
-            market that could exceed billions by next few years.
+            Built by the leading Web3 developers of the crypto industry, $CFLIP is a multidirectional
+            platform for coin flip, games, jackpots, staking and much more. Connect and start winning.
           </p>
           <div className="welcome__buttons">
             <button className='welcome__button'>
-            Join Presale
+            Private Sale
             </button>
             <button className='welcome__button-inverse'>
             Whitepaper
