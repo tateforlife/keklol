@@ -3,6 +3,30 @@ import React from 'react';
 import './roadmap.styles.scss';
 
 const Roadmap = () => {
+  React.useEffect(() => {
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active')
+        } else {
+          if (entry.boundingClientRect.top > 0) {
+            entry.target.classList.remove('active')
+          }
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(callback, {
+      threshold: 0.75,
+    })
+
+    const els = document.getElementsByClassName('reveal');
+    Array.from(els).forEach((el) => {
+      observer.observe(el);
+    })
+  }, []);
+
   return (
     <div className='roadmap'>
       <div className="roadmap__content">
@@ -23,7 +47,7 @@ const Roadmap = () => {
           </h3>
           <a className='roadmap__link' href='#'>Also read more in the Whitepaper</a>
         </div>
-        <div className="roadmap__item roadmap__item--1">
+        <div className="roadmap__item roadmap__item--1 reveal">
           <div className="roadmap__item-content">
             <div className="roadmap__separator"></div>
             <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +64,7 @@ const Roadmap = () => {
             <img src="roadmap_1.png" alt="roadmap deposit" />
           </div>
         </div>
-        <div className="roadmap__item roadmap__item--2">
+        <div className="roadmap__item roadmap__item--2 reveal">
           <div className="roadmap__item-content">
             <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="8" cy="7.5" r="6" stroke="white" strokeWidth="3"/>
@@ -56,7 +80,7 @@ const Roadmap = () => {
             <img src="roadmap_2.png" alt="roadmap game" />
           </div>
         </div>
-        <div className="roadmap__item roadmap__item--3">
+        <div className="roadmap__item roadmap__item--3 reveal">
           <div className="roadmap__item-content">
             <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="8" cy="7.5" r="6" stroke="white" strokeWidth="3"/>
@@ -69,7 +93,7 @@ const Roadmap = () => {
             <img src="roadmap_3.png" alt="roadmap join" />
           </div>
         </div>
-        <div className="roadmap__item roadmap__item--4">
+        <div className="roadmap__item roadmap__item--4 reveal">
           <div className="roadmap__item-content">
             <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="8" cy="7.5" r="6" stroke="white" strokeWidth="3"/>

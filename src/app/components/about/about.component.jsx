@@ -3,10 +3,34 @@ import React from 'react';
 import './about.styles.scss';
 
 const About = () => {
+  React.useEffect(() => {
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active')
+        } else {
+          if (entry.boundingClientRect.top > 0) {
+            entry.target.classList.remove('active')
+          }
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(callback, {
+      threshold: 0.4,
+    })
+
+    const els = document.getElementsByClassName('reveal-2');
+    Array.from(els).forEach((el) => {
+      observer.observe(el);
+    })
+  }, []);
+
   return (
     <div className='about'>
       <div className='about__gradient'></div>
-      <div className='about__works'>
+      <div className='about__works reveal-2'>
         <img src='about_question.png' alt='about question' />
         <h4 className='about__heading'>How it works?</h4>
       </div>

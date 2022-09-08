@@ -11,6 +11,7 @@
 
     @include tablet {
       padding: 0 30px 50px;
+      margin: calc(100vw / 3) auto 0;
     }
   }
 
@@ -71,11 +72,16 @@
     font-size: 26px;
     line-height: 39px;
     margin: 0;
+    
+    opacity: 0;
+    transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateX(-15px);
 
     @include tablet {
       font-size: 18px;
       line-height: 32px;
       max-width: initial;
+      transform: translateY(-15px);
     }
 
     span {
@@ -85,9 +91,34 @@
 
   &__item {
     display: flex;
+    align-items: center;
+
+    &.active {
+      .roadmap__text {
+        opacity: 1;
+        transform: translateX(0);
+
+        @include tablet {
+          transform: translateY(0);
+        }
+      }
+
+      .roadmap__item-image {
+        transform: translateX(0);
+
+        @include tablet {
+          transform: translateY(0);
+        }
+
+        img {
+          opacity: 1;
+        }
+      }
+    }
 
     @include tablet {
       flex-direction: column;
+      align-items: initial;
     }
 
     &-content {
@@ -100,15 +131,21 @@
       margin-left: auto;
       padding-left: 50px;
 
+      transition: transform .6s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateX(25%);
+
       @include tablet {
         margin: 0;
         padding: 0;
         max-width: initial;
+        transform: translateY(20%);
       }
 
       img {
         position: relative;
         width: 100%;
+
+        opacity: 0.25;
       }
     }
 
@@ -124,6 +161,11 @@
 
     &--1 {
       margin-top: 80px;
+      min-height: 520px;
+
+      @include tablet {
+        min-height: initial;
+      }
 
       svg {
         position: absolute;
@@ -134,9 +176,11 @@
 
     &--2 {
       margin-top: 134px;
+      min-height: 470px;
 
       @include tablet {
         margin-top: 40px;
+        min-height: initial;
       }
 
       svg {
@@ -148,9 +192,11 @@
 
     &--3 {
       margin-top: 202px;
+      min-height: 320px;
 
       @include tablet {
         margin-top: 40px;
+        min-height: initial;
       }
 
       svg {
@@ -162,9 +208,11 @@
 
     &--4 {
       margin-top: 202px;
+      min-height: 400px;
 
       @include tablet {
         margin-top: 40px;
+        min-height: initial;
       }
 
       svg {

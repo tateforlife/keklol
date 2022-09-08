@@ -358,13 +358,13 @@ const App = () => {
     }
   }
 
-  React.useEffect(() => {
-    window.addEventListener('scroll', reveal);
+  // React.useEffect(() => {
+  //   window.addEventListener('scroll', reveal);
 
-    reveal();
+  //   reveal();
 
-    return () => window.removeEventListener('scroll', reveal);
-  }, []);
+  //   return () => window.removeEventListener('scroll', reveal);
+  // }, []);
 
   return (
     <Router>
