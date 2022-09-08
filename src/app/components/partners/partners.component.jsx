@@ -25,6 +25,9 @@ const Partners = () => {
             <p className="partners__paragraph">
               <span>Providing a launchpad contract.</span> It gives you the opportunity to purchase tokens directly from our website, before the start of the public sale.
             </p>
+            <button className='partners__button'>
+              Private Sale
+            </button>
           </div>
           <div className="partners__logos">
             <div className="partners__logo">
