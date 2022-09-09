@@ -96,14 +96,14 @@
     left: 0;
 
     .menu-wrapper {
-      margin: 0;
       max-width: none;
       position: relative;
 
       display: flex;
-      height: 100%;
       flex-direction: column;
       justify-content: center;
+
+      margin: auto 0;
 
       ul {
         flex-direction: column;
