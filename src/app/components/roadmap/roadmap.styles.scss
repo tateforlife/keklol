@@ -179,6 +179,21 @@
       }
     }
 
+    &--0 {
+      margin-top: 80px;
+      min-height: 520px;
+
+      @include tablet {
+        min-height: initial;
+      }
+
+      svg {
+        position: absolute;
+        left: 131px;
+        top: 463px;
+      }
+    }
+
     &--1 {
       margin-top: 80px;
       min-height: 520px;

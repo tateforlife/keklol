@@ -52,6 +52,20 @@ const Roadmap = () => {
           </a>
           <div className="roadmap__divider"></div>
         </div>
+        <div className="roadmap__item roadmap__item--0 reveal">
+          <div className="roadmap__item-content">
+            <div className="roadmap__separator"></div>
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="7.5" r="6" stroke="white" strokeWidth="3"/>
+            </svg>
+            <p className="roadmap__text">
+              <span>Connect wallet.</span> To start interacting with the coinflip platform, you need to buy a $CFC token and connect your wallet by clicking on the &quot;Connect Wallet&quot; button at the top of the site.
+            </p>
+          </div>
+          <div className="roadmap__item-image">
+            <img src="roadmap_1.png" alt="roadmap deposit" />
+          </div>
+        </div>
         <div className="roadmap__item roadmap__item--1 reveal">
           <div className="roadmap__item-content">
             <div className="roadmap__separator"></div>
