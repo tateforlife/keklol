@@ -278,6 +278,10 @@
     position: absolute;
     width: 8px;
     left: initial;
+
+    @include tablet {
+      top: 8px;
+    }
   }
 
   .kek {

@@ -15,7 +15,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className='carousel'>
+    <div className='carousel' id="features">
       <div className="carousel__wrapper">
         <svg width="40" height="47" viewBox="0 0 40 47" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M28.6278 25.8154L19.9799 47.0001L11.1046 25.8154H28.6278Z" fill="white"/>

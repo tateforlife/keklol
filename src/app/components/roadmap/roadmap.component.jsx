@@ -27,7 +27,7 @@ const Roadmap = () => {
   }, []);
 
   return (
-    <div className='roadmap'>
+    <div className='roadmap' id="roadmap">
       <div className="kek"></div>
       <div className="roadmap__content">
         {/* <svg className='roadmap__tree' xmlns="http://www.w3.org/2000/svg" width="91" height="3047" viewBox="0 0 91 3047" fill="none">
