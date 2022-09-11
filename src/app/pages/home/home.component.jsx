@@ -12,9 +12,9 @@ import Carousel from '../../components/carousel/carousel.component';
 import Phases from '../../components/phases/phases.component';
 // import Larry from '../../components/larry/larry.component';
 // import About from '../../components/about/about.component';
-// import Footer from '../../components/footer/footer.component';
+import Footer from '../../components/footer/footer.component';
 // import Team from '../../components/team/team.component';
-// import FAQ from '../../components/faq/faq.component';
+import FAQ from '../../components/faq/faq.component';
 
 const HomePageComponent = ({
   currentAccount,
@@ -34,6 +34,8 @@ const HomePageComponent = ({
       <Roadmap />
       <Phases />
       <Partners />
+      <FAQ />
+      <Footer />
     </section>
   );
 };

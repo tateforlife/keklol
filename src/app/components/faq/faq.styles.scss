@@ -3,8 +3,8 @@
   flex-direction: column;
   color: white;
   width: 100%;
-  background-image: url('bg.png');
   position: relative;
+  background: #393F5A;
 
   & > span {
     position: absolute;
@@ -12,26 +12,27 @@
   }
 
   &__heading {
-    font-family: 'Gloria Hallelujah';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 111px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    color: #FFFFFF;
+    max-width: 400px;
+    margin: 30px auto;
     text-align: center;
-    color: #34BBFF;
-    margin: 25px 0 30px;
 
     @include tablet {
-      font-size: 32px;
+      font-size: 36px;
+      line-height: 42px;
     }
 
-    @include mobile {
-      font-size: 26px;
-      line-height: 32px;
-      margin: 20px 0 40px;
+    span {
+      background: linear-gradient(left, #19D6E2, #9960FF);
+      background: -webkit-linear-gradient(left, #19D6E2, #9960FF);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
-
 
   &__list {
     margin: 0 auto 70px;
@@ -44,6 +45,7 @@
 
     @include mobile {
       max-width: 100%;
+      width: calc(100% - 60px);
     }
 
     &-item {
@@ -52,9 +54,10 @@
       summary {
         font-size: 20px;
         line-height: 24px;
-        padding: 20px 40px 20px 20px;
+        padding: 20px 20px 20px 20px;
         position: relative;
-        font-family: 'Gloria Hallelujah';
+        display: flex;
+        justify-content: space-between;
 
         @include mobile {
           padding: 20px 60px 20px 40px;
@@ -72,22 +75,30 @@
           display:none;
         }
 
-        &::after {
-          transition: transform .2s ease;
-          content: " "; 
-          width: 0; 
-          height: 0; 
-          border-top: 10px solid transparent;
-          border-bottom: 10px solid transparent;
-          border-left: 10px solid #fff;
-          position: absolute;
-          right: 20px;
-          top: 22px;
-
-          @include mobile {
-            right: 30px;
+        svg {
+          path {
+            transition: all .25s ease;
           }
+          transition: all .25s ease;
+          transform: rotate(0deg);
         }
+
+        // &::after {
+        //   transition: transform .2s ease;
+        //   content: " "; 
+        //   width: 0; 
+        //   height: 0; 
+        //   border-top: 10px solid transparent;
+        //   border-bottom: 10px solid transparent;
+        //   border-left: 10px solid #fff;
+        //   position: absolute;
+        //   right: 20px;
+        //   top: 22px;
+
+        //   @include mobile {
+        //     right: 30px;
+        //   }
+        // }
       }
 
       &[open] {
@@ -106,6 +117,14 @@
             }
           }
         }
+
+        svg {
+          path {
+            fill: white;
+          }
+
+          transform: rotate(45deg);
+        }
       }
 
       &:hover {
@@ -116,7 +135,7 @@
         margin-top: 20px;
       }
 
-      background: #FBA41C;;
+      background: #202742;
 
       &-paragraph {
         font-size: 16px;

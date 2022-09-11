@@ -1,7 +1,7 @@
 .footer {
   align-items: center;
+  background: #202742;
   display: flex;
-  background: #fff;
   padding: 60px 0;
   width: 100%;
   padding: 20px 30px 60px;
@@ -13,6 +13,59 @@
 
   @include mobile {
     padding: 30px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    gap: 14px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__button {
+    background: linear-gradient(93.74deg, #09BECA -12.52%, #9A68F3 125.6%);
+    border-radius: 10px;
+    border: 0;
+    padding: 12px 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    max-width: 220px;
+    padding: 16px 0 10px;
+    height: 50px;
+    user-select: none;
+    transition: all .25s;
+
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+    }
+
+    @include tablet {
+      font-size: 16px;
+      padding: 14px 0 10px;
+
+      &:hover,
+      &:active {
+        transform: initial;
+      }
+    }
+  }
+
+  &__right {
+    @include tablet {
+      display: none;
+    }
   }
 
   &__socials {
@@ -63,22 +116,24 @@
     width: 100%;
     max-width: initial;
     height: 50px;
+    margin: 30px 0;
 
     @include tablet {
       height: 30px;
       max-width: 280px;
-      margin: 20px 0 0;
+      margin: 30px 0;
     }
   }
 
   .social-icon {
-    padding: 0 15px;
+    padding: 0;
     width: 100%;
 
     svg {
       width: 100%;
       height: 100%;
-      max-width: 30px;
+      max-width: 40px;
+      height: 40px;
     }
 
     &:nth-child(2) {
@@ -96,6 +151,8 @@
 
   &__socials {
     margin-top: 20px;
+    display: flex;
+    width: 100%;
     &-heading {
       font-weight: 800;
       font-size: 32px;
@@ -106,6 +163,8 @@
       @include tablet {
         font-size: 24px;
         line-height: 30px;
+        width: initial;
+        display: initial;
       }
     }
   }
@@ -125,45 +184,38 @@
     }
   }
 
-  &__button {
-    display: flex;
+  &__button-inverse {
+    background: transparent;
+    border-radius: 10px;
     border: 0;
-    height: auto;
-    align-items: center;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-    transition: all 0.1s linear;
-    margin: 40px auto 0;
-    background: #FBA41C;
-    max-width: 275px;
-    text-decoration: none;
+    padding: 12px 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
     color: white;
-
-    &:visited {
-      color: white;
-    }
-
-    @include tablet {
-      max-width: none;
-      margin: 30px 0 0;
-    }
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    width: 100%;
+    max-width: 220px;
+    padding: 16px 0 10px;
+    height: 50px;
+    user-select: none;
+    transition: all .25s;
 
     &:hover,
-    &:focus {
-      cursor: pointer;
+    &:active {
+      color: black;
+      background: white;
+      transform: scale(1.1);
     }
+    
+    @include tablet {
+      font-size: 16px;
+      padding: 14px 0 10px;
 
-    &-title {
-      padding: 20px 10px;
-      margin: 0;
-      width: 100%;
-      text-transform: uppercase;
-      font-size: 18px;
-
-      @include tablet {
-        padding: 16px 8px;
-        font-size: 16px;
+      &:hover,
+      &:active {
+        transform: initial;
       }
     }
   }
@@ -186,6 +238,7 @@
 
   .logo-wrapper {
     justify-content: center;
+    margin: 0 0 30px;
 
     img {
       height: 130px;

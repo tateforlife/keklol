@@ -417,7 +417,6 @@ const Phases = () => {
                 <div className="phases__content">
                   <h4 className="phases__heading--small">
                 Phase 2
-                    <div className="phases__divider"></div>
                   </h4>
                   <p className="phases__paragraph">
                 - Team KYC
@@ -481,7 +480,6 @@ const Phases = () => {
                 <div className="phases__content">
                   <h4 className="phases__heading--small">
                 Phase 4
-                    <div className="phases__divider"></div>
                   </h4>
                   <p className="phases__paragraph">
                 - Innovative CoinFlip game beta version release
