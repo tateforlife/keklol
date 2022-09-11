@@ -8,6 +8,7 @@
 
   a {
     color: #9960FF;
+    word-break: break-word;
 
     &:visited {
       color: #9960FF;
@@ -160,10 +161,6 @@
         padding: 0 20px 20px;
         margin: 0;
         cursor: auto;
-
-        @include mobile {
-          padding: 0 30px 20px;
-        }
 
         span {
           font-weight: 800;
