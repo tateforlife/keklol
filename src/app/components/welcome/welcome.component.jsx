@@ -65,7 +65,7 @@ const Welcome = () => {
         </div>
         <div className="welcome__notebook">
           <img src="welcome_mac.png" alt="welcome notebook" onLoad={(e) => console.log(e.target.classList.add('active')) } />
-          <img src="welcome_gradient.png" alt="welcome gradient" />
+          <img src="welcome_gradient_2.png" alt="welcome gradient" />
           {/* <img src="web.png" alt="welcome gradient" /> */}
         </div>
       </div>

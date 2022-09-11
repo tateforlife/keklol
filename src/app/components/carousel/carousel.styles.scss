@@ -5,6 +5,27 @@
     
   }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+
+    @include tablet {
+      width: auto;
+    }
+  }
+
+  &__img {
+    order: 2;
+    width: 55%;
+
+    @include tablet {
+      order: 0;
+      width: auto;
+    }
+  }
+
   &__svg {
     margin-right: 10px;
     position: relative;
@@ -29,8 +50,11 @@
 
   &__item {
     display: flex;
-    flex-direction: column;
     padding: 0;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &__heading {
@@ -38,12 +62,12 @@
     font-size: 50px;
     line-height: 55px;
     color: #FFFFFF;
-    margin: 30px 0 50px;
+    margin: 30px 0 0px;
     text-align: center;
 
     &-small {
       font-weight: 700;
-      font-size: 40px;
+      font-size: 36px;
       line-height: 60px;
       color: #FFFFFF;
       margin: 0 0 10px;
@@ -82,10 +106,11 @@
   &__link {
     color: white;
     text-decoration: none;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 28px;
     margin-top: 10px;
     position: relative;
+    width: max-content;
 
     @include tablet {
       font-size: 18px;
@@ -112,10 +137,14 @@
 
   .more-arrow {
     display: block;
-    right: 0;
-    top: 6px;
+    right: -16px;
+    top: 5px;
     position: absolute;
     width: 8px;
+
+    @include tablet {
+      top: 4px;
+    }
   }
 
   .slick-dots {

@@ -5,6 +5,11 @@
   margin: 0 auto;
   padding: 0;
   align-items: center;
+  overflow-x: hidden;
+
+  @include tablet {
+    // overflow-x: initial;
+  }
 
   &__roadmap {
     background-image: linear-gradient(to right, rgba(0, 0,0, 0.8) , transparent, rgba(0, 0, 0, 0.8)), url('https://opengameart.org/sites/default/files/seamless%20space_0.PNG');

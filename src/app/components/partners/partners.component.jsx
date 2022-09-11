@@ -28,8 +28,7 @@ const Partners = () => {
               </svg>
             </a>
             <p className="partners__paragraph">
-              <span>Providing a launchpad contract.</span> It gives you the opportunity to purchase tokens directly from our website, before the start of the public sale.
-            </p>
+              <span>Partnerships with Top Tier CEX.</span> Blogs, news tabloids and world-class influencers. You can read more about this in the Partnerships &amp; Marketing section.</p>
             <button className='partners__button'>
               Private Sale
             </button>

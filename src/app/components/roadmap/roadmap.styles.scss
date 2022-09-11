@@ -124,11 +124,13 @@
       }
 
       .roadmap__item-image {
-        transform: translateX(0);
-        opacity: 1;
-
-        @include tablet {
-          transform: scale(1);
+        img {
+          transform: translateX(0);
+          opacity: 1;
+  
+          @include tablet {
+            transform: scale(1);
+          }
         }
       }
     }
@@ -148,20 +150,31 @@
       margin-left: auto;
       padding-left: 50px;
 
-      transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),transform 1s cubic-bezier(0.16, 1, 0.3, 1);
-      transform: translateX(25%);
-      opacity: .25;
+      overflow: hidden;
+      position: relative;
+      left: 30px;
 
       @include tablet {
         margin: 0;
         padding: 0;
         max-width: initial;
         transform: scale(.75);
+        overflow: initial;
+        left: initial;
       }
 
       img {
         position: relative;
         width: 100%;
+
+        transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        transform: translateX(25%);
+        opacity: .25;
+
+        @include tablet {
+          transform: scale(.75);
+          opacity: 0;
+        }
       }
     }
 

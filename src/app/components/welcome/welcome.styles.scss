@@ -69,21 +69,30 @@
 
     @include tablet {
       width: 100%;
-      margin: 50px 0;
+      margin: 50px auto;
     }
 
     img {
       width: 100%;
       position: relative;
-      z-index: 1;
+      z-index: 2001;
+
+      @include tablet {
+        z-index: 2;
+      }
 
       & + img {
-        top: -90%;
-        left: -20px;
-        width: 100vw;
+        top: -50%;
+        left: -30%;
+        width: 150%;
         height: auto;
         position: absolute;
-        z-index: 0;
+        z-index: 2000;
+        pointer-events: none;
+
+        @include tablet {
+          z-index: 1;
+        }
       }
     }
 
@@ -145,10 +154,21 @@
     padding: 16px 0 10px;
     height: 50px;
     user-select: none;
+    transition: all .25s;
+
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+    }
 
     @include tablet {
       font-size: 16px;
       padding: 14px 0 10px;
+
+      &:hover,
+      &:active {
+        transform: initial;
+      }
     }
   }
 
@@ -168,10 +188,23 @@
     padding: 16px 0 10px;
     height: 50px;
     user-select: none;
+    transition: all .25s;
+
+    &:hover,
+    &:active {
+      color: black;
+      background: white;
+      transform: scale(1.1);
+    }
     
     @include tablet {
       font-size: 16px;
       padding: 14px 0 10px;
+
+      &:hover,
+      &:active {
+        transform: initial;
+      }
     }
   }
 
