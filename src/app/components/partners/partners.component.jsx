@@ -29,6 +29,64 @@ const Partners = () => {
             </a>
             <p className="partners__paragraph">
               <span>Partnerships with Top Tier CEX.</span> Blogs, news tabloids and world-class influencers. You can read more about this in the Partnerships &amp; Marketing section.</p>
+            <div className="partners__features">
+              <div className="partners__feature">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="6" stroke="url(#paint0_linear_302_254)" strokeWidth="3"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_302_254" x1="15" y1="7.49995" x2="4.98441e-08" y2="7.49995" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#9960FF"/>
+                      <stop offset="1" stopColor="#19D6E2"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <p className="partners__feature-text">
+                  500+ influencers
+                </p>
+              </div>
+              <div className="partners__feature">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="6" stroke="url(#paint0_linear_302_254)" strokeWidth="3"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_302_254" x1="15" y1="7.49995" x2="4.98441e-08" y2="7.49995" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#9960FF"/>
+                      <stop offset="1" stopColor="#19D6E2"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <p className="partners__feature-text">
+                  $ 300 000 invested
+                </p>
+              </div>
+              <div className="partners__feature">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="6" stroke="url(#paint0_linear_302_254)" strokeWidth="3"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_302_254" x1="15" y1="7.49995" x2="4.98441e-08" y2="7.49995" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#9960FF"/>
+                      <stop offset="1" stopColor="#19D6E2"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <p className="partners__feature-text">
+                  50+ industry partners
+                </p>
+              </div>
+              <div className="partners__feature">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.5" cy="7.5" r="6" stroke="url(#paint0_linear_302_254)" strokeWidth="3"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_302_254" x1="15" y1="7.49995" x2="4.98441e-08" y2="7.49995" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#9960FF"/>
+                      <stop offset="1" stopColor="#19D6E2"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <p className="partners__feature-text">
+                  50+ industry partners
+                </p>
+              </div>
+            </div>
             <button className='partners__button'>
               Private Sale
             </button>

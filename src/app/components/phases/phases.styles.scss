@@ -37,7 +37,7 @@
     @include tablet {
       font-size: 36px;
       line-height: 42px;
-      margin: 5px 0 0;
+      margin: 0 auto 30px 0;
     }
 
     &--small {
@@ -51,6 +51,9 @@
       @include tablet {
         font-size: 32px;
         line-height: 32px;
+        position: relative;
+        margin: 0 0 40px;
+        padding-bottom: 16px;
       }
     }
 
@@ -67,6 +70,10 @@
     display: flex;
     width: 100%;
     position: relative;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &__img {
@@ -76,6 +83,10 @@
     border-right: 3px solid white;
     padding: 0 40px 30px;
     height: calc(100% - 80px);
+
+    @include tablet {
+      border-right: none;
+    }
   }
 
   &__item {
@@ -84,10 +95,27 @@
     width: 42%;
     position: relative;
 
+    @include tablet {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      border-left: 3px solid white;
+
+      &:not(:last-of-type) {
+        padding-bottom: 100px;
+      }
+    }
+
     & > svg {
       position: absolute;
       top: 16px;
       left: 211px;
+
+      @include tablet {
+        top: 18px;
+        left: -6px;
+        display: none;
+      }
     }
 
     svg + svg {
@@ -100,18 +128,31 @@
 
     & + & {
       margin-left: 50px;
+
+      @include tablet {
+        margin: 0;
+      }
     }
   }
 
   &__content {
     padding: 0 0 0 30px;
     min-height: 250px;
+
+    @include tablet {
+      min-height: initial;
+      width: calc(100% - 60px);
+    }
   }
 
   &__paragraph {
     font-size: 16px;
     line-height: 20px;
     color: white;
+
+    @include tablet {
+      padding-left: 20px;
+    }
   }
 
   &__divider {
@@ -121,11 +162,24 @@
     z-index: 1;
     background: -webkit-linear-gradient(left, #19D6E2, #9960FF);
     bottom: 0;
+
+    @include tablet {
+      height: 3px;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      background: -webkit-linear-gradient(left, #19D6E2, #9960FF);
+    }
   }
 
   &__bot {
     display: flex;
     justify-content: flex-end;
+
+    @include tablet {
+      flex-direction: column;
+      width: 100%;
+    }
 
     .phases__item {
       align-items: flex-start;

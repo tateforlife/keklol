@@ -9,6 +9,34 @@
   @include tablet {
   }
 
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__feature {
+    width: 50%;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+      width: initial;
+    }
+  }
+
+  &__feature-text {
+    position: relative;
+    top: 2px;
+    margin: 10px 0 10px 10px;
+  }
+
   &__logos {
     display: flex;
     gap: 20px;
