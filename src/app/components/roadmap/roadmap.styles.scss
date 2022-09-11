@@ -18,13 +18,13 @@
   &__content {
     position: relative;
     max-width: 1260px;
-    padding: 0 30px 50px 180px;
+    padding: 0 30px 63px 180px;
     margin: 400px auto 0;
 
     @include tablet {
       padding: 0 30px 50px;
       // margin: calc(100vw / 3) auto 0;
-      margin: 50px auto 0;
+      margin: 100px auto 0;
     }
   }
 
@@ -194,28 +194,29 @@
       min-height: 520px;
 
       @include tablet {
+        margin-top: 50px;
         min-height: initial;
       }
 
       svg {
         position: absolute;
         left: 131px;
-        top: 463px;
+        top: 468px;
       }
     }
 
     &--1 {
-      margin-top: 80px;
       min-height: 520px;
 
       @include tablet {
+        margin-top: 40px;
         min-height: initial;
       }
 
       svg {
         position: absolute;
         left: 131px;
-        top: 463px;
+        top: 1005px;
       }
     }
 
@@ -231,7 +232,7 @@
       svg {
         position: absolute;
         left: 131px;
-        top: 1108px;
+        top: 1654px;
       }
     }
 
@@ -247,7 +248,7 @@
       svg {
         position: absolute;
         left: 131px;
-        top: 1704px;
+        top: 2250px;
       }
     }
 
@@ -263,7 +264,7 @@
       svg {
         position: absolute;
         left: 131px;
-        top: 2266px;
+        top: 2814px;
       }
     }
   }

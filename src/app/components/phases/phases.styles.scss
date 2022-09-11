@@ -1,0 +1,154 @@
+.phases {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background: #393F5A;
+
+  @include tablet {
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1260px;
+    width: calc(100% - 60px);
+    padding: 0 30px;
+    position: relative;
+
+    @include tablet {
+      width: calc(100% - 40px);
+      padding: 0 20px;
+    }
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    color: #FFFFFF;
+    margin: 30px auto 50px 0;
+    text-align: left;
+
+    @include tablet {
+      font-size: 36px;
+      line-height: 42px;
+      margin: 5px 0 0;
+    }
+
+    &--small {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px;
+      color: #FFFFFF;
+      margin: 0 0 10px;
+      max-width: initial;
+  
+      @include tablet {
+        font-size: 32px;
+        line-height: 32px;
+      }
+    }
+
+    span {
+      background: linear-gradient(left, #19D6E2, #9960FF);
+      background: -webkit-linear-gradient(left, #19D6E2, #9960FF);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__top {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-right: 3px solid white;
+    padding: 0 40px 30px;
+    height: calc(100% - 80px);
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    width: 42%;
+    position: relative;
+
+    & > svg {
+      position: absolute;
+      top: 16px;
+      left: 211px;
+    }
+
+    svg + svg {
+      position: static;
+      top: initial;
+      left: initial;
+      padding: 0 40px 30px;
+      border-right: 3px solid white;
+    }
+
+    & + & {
+      margin-left: 50px;
+    }
+  }
+
+  &__content {
+    padding: 0 0 0 30px;
+    min-height: 250px;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+  }
+
+  &__divider {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background: -webkit-linear-gradient(left, #19D6E2, #9960FF);
+    bottom: 0;
+  }
+
+  &__bot {
+    display: flex;
+    justify-content: flex-end;
+
+    .phases__item {
+      align-items: flex-start;
+
+      & > svg {
+        top: calc(100% - 36px);
+      }
+
+      svg + svg {
+        padding: 30px 40px;
+      }
+    }
+
+    .phases__content {
+      min-height: auto;
+    }
+
+    .phases__img {
+      height: calc(100% - 80px);
+    }
+
+    .phases__heading--small {
+      margin: 20px 0 0;
+    }
+  }
+}
