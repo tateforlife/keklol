@@ -171,6 +171,7 @@
         transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),transform 1s cubic-bezier(0.16, 1, 0.3, 1);
         transform: translateX(25%);
         opacity: .25;
+        filter: drop-shadow(0px 10px 50px #202742);
 
         @include tablet {
           transform: scale(.75);

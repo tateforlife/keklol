@@ -17,6 +17,15 @@ const Carousel = () => {
   return (
     <div className='carousel'>
       <div className="carousel__wrapper">
+        <svg width="40" height="47" viewBox="0 0 40 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M28.6278 25.8154L19.9799 47.0001L11.1046 25.8154H28.6278Z" fill="white"/>
+          <path d="M14.1311 23.1597L19.9849 18.522L25.6887 23.1597H14.1311Z" fill="white"/>
+          <path d="M7.57394 25.8154L14.6735 42.7639L0 25.8154H7.57394Z" fill="white"/>
+          <path d="M32.1497 25.8154H40L25.1444 42.9733L32.1497 25.8154Z" fill="white"/>
+          <path d="M38.6524 23.1597H30.3676L23.021 17.1848H29.8536L38.6524 23.1597Z" fill="white"/>
+          <path d="M9.20673 17.1848H16.9332L9.39205 23.1597H1.08594L9.20673 17.1848Z" fill="white"/>
+          <path d="M16.455 0.5L13.995 0.935L15.2975 8.32L17.7575 7.885L16.455 0.5ZM26.005 0.935L23.545 0.5L22.2425 7.885L24.7075 8.32L26.005 0.935ZM35 4.005L32.8325 2.755L29.0825 9.25L31.25 10.5L35 4.005ZM7.1675 2.755L5 4.005L8.75 10.5L10.9175 9.25L7.1675 2.755Z" fill="white"/>
+        </svg>
         <h3 className='carousel__heading'>Utilities <br/> &amp; <span>Key Features</span></h3>
         <Slider {...settings}>
           <div>
