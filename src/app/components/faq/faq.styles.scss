@@ -6,6 +6,24 @@
   position: relative;
   background: #393F5A;
 
+  &__back {
+    position: absolute;
+    top: 0;
+    margin: 0 !important;
+
+    &-2 {
+      top: 40%;
+      left: 10%;
+      position: absolute;
+      height: 900px;
+  
+
+      // @include tablet {
+      //   display: none;
+      // }
+    }
+  }
+
   a {
     color: #9960FF;
     word-break: break-word;
@@ -51,6 +69,7 @@
     margin: 0 auto 70px;
     max-width: 50%;
     width: 100%;
+    z-index: 1;
 
     @include tablet {
       max-width: 75%;
