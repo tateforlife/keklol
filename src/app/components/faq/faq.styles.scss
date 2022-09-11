@@ -11,6 +11,10 @@
     top: -99px;
   }
 
+  & > svg {
+    margin: 20px auto 0;    
+  }
+
   &__heading {
     font-weight: 700;
     font-size: 50px;
