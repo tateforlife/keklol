@@ -6,13 +6,21 @@
   position: relative;
   background: #393F5A;
 
+  a {
+    color: #9960FF;
+
+    &:visited {
+      color: #9960FF;
+    }
+  }
+
   & > span {
     position: absolute;
     top: -99px;
   }
 
   & > svg {
-    margin: 20px auto 0;    
+    margin: 50px auto 0;
   }
 
   &__heading {

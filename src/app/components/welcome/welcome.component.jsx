@@ -10,8 +10,7 @@ const Welcome = () => {
         <div className="welcome__content">
           <h1 className="welcome__heading">Coin Flip <br/> Web3 Platform</h1>
           <p className="welcome__description">
-            Built by the leading Web3 developers of the crypto industry, $CFLIP is a multidirectional
-            platform for coin flip, games, jackpots, staking and much more. Connect and start winning.
+            Built by the leading Web3 developers of the crypto industry, $CFC is a multi-directional platform for coin flip, games, jackpots, staking and much more. Connect and start winning.
           </p>
           <div className="welcome__buttons">
             <button className='welcome__button'>

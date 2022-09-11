@@ -23,9 +23,9 @@ const Footer = () => {
               </div>
               <Social />
             </div>
-            <div className="footer__right">
+            {/* <div className="footer__right">
               menu
-            </div>
+            </div> */}
           </div>
           <div className='footer__legal'>
             <p className='footer__legal-rights'>

@@ -89,7 +89,7 @@
   }
 
   &__text {
-    max-width: 430px;
+    max-width: 530px;
     color: white;
     font-size: 26px;
     line-height: 39px;
@@ -148,12 +148,11 @@
     }
     
     &-image {
-      max-width: 640px;
+      max-width: 620px;
       margin-left: auto;
-      padding-left: 50px;
-
       position: relative;
-      left: 30px;
+      padding-left: 30px;
+      width: 100%;
 
       @include tablet {
         margin: 0;
@@ -208,7 +207,7 @@
     }
 
     &--1 {
-      min-height: 520px;
+      min-height: 480px;
 
       @include tablet {
         margin-top: 40px;
@@ -223,7 +222,7 @@
     }
 
     &--2 {
-      margin-top: 134px;
+      margin-top: 195px;
       min-height: 470px;
 
       @include tablet {
@@ -239,8 +238,8 @@
     }
 
     &--3 {
-      margin-top: 202px;
-      min-height: 320px;
+      margin-top: 180px;
+      min-height: 440px;
 
       @include tablet {
         margin-top: 40px;
@@ -255,7 +254,7 @@
     }
 
     &--4 {
-      margin-top: 202px;
+      margin-top: 83px;
       min-height: 400px;
 
       @include tablet {
@@ -267,6 +266,14 @@
         position: absolute;
         left: 131px;
         top: 2814px;
+      }
+
+      .roadmap__item-content {
+        padding-top: 40px;
+
+        @include tablet {
+          padding: 0;
+        }
       }
     }
   }

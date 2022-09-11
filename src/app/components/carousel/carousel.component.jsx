@@ -52,8 +52,7 @@ const Carousel = () => {
                   <div className="carousel__divider"></div>
                 </a>
                 <p className="carousel__paragraph">
-                  <span>An innovative Web 3 coin toss game.</span> Allows you to play with any player around the globe, hit
-              the X100 jackpot and much more.
+                  <span>An innovative Web 3 coin toss game.</span> Allows you to play with any player around the globe, hit the X100 jackpot and much more. Read more in &quot;Quick Guide&quot; section.
                 </p>
               </div>
             </div>
@@ -138,7 +137,7 @@ const Carousel = () => {
                   <div className="carousel__divider"></div>
                 </a>
                 <p className="carousel__paragraph">
-                  <span>Transparent and honest token sharing.</span> Described in detail in whitepaper, available for viewing to any user.                </p>
+                  <span>Transparent and honest token sharing.</span> Described in detail in whitepaper, available for viewing to any user.</p>
               </div>
             </div>
           </div>
@@ -166,7 +165,7 @@ const Carousel = () => {
                   <div className="carousel__divider"></div>
                 </a>
                 <p className="carousel__paragraph">
-                  <span>Verified by the pink sale platform and received the SAFU ticker.</span> CoinFlip is an absolutely safe project for investment.                </p>
+                  <span>Verified by the pink sale platform and received the SAFU ticker.</span> CoinFlip is an absolutely safe project for investment.</p>
               </div>
             </div>
           </div>

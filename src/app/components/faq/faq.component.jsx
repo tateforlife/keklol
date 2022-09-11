@@ -21,7 +21,7 @@ const FAQ = () => {
           </svg>
           </summary>
           <p className='faq__list-item-paragraph'>
-            You will be able to mint directly from our website in 2022.
+            Coin Flip is a web 3.0 level game that allows you to win, earn, stake and participate in games with players around the world.
           </p>
         </details>
         <details className='faq__list-item'>
@@ -29,7 +29,7 @@ const FAQ = () => {
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-            “Larry in the Office” supply is 1111 NFT.
+            In simple words, Coin Flip coin is the main engine in all project processes: 1in1 game, jackpot, staking, rewards, and so on - all this functions only on the $CFC token, making the coin indispensable for playing and earning along with Coin Flip platform.
           </p>
         </details>
         <details className='faq__list-item'>
@@ -37,7 +37,7 @@ const FAQ = () => {
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-            1 “Larry in the office“ Season 1 NFT will cost 0.1 ETH
+            $CFC can be purchased or sold on our partnered DEX Pancakeswap and the liquidity pair will be CFC/BNB.
           </p>
         </details>
         <details className='faq__list-item'>
@@ -45,10 +45,7 @@ const FAQ = () => {
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-          You can get access to a whitelist by participating in campaigns on our Social Media (Twitter, Instagram, Discord).
-          </p>
-          <p className='faq__list-item-paragraph'>
-            Check our Discord for more information.
+          Yes, Coin Flip team has been KYC verified by trusted verification partner “HZ KTO”. Please find more information regarding KYC report in &quot;Team KYC&quot; whitepaper section.
           </p>
         </details>
         <details className='faq__list-item'>
@@ -56,7 +53,7 @@ const FAQ = () => {
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-            We offer a number of wallet connections for minting, but MetaMask is the recommended wallet.
+          We sustain the APY of our token distribution phase through hardwired taxes, fees and external revenues.
           </p>
         </details>
         <details className='faq__list-item'>
@@ -64,7 +61,7 @@ const FAQ = () => {
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-            We offer a number of wallet connections for minting, but MetaMask is the recommended wallet.
+          Yes, Coin Flip have safe smart contract that has been audited by HZ KTO. Please find more information regarding KYC report in &quot;Smart-contract&quot; whitepaper section.
           </p>
         </details>
         <details className='faq__list-item'>
@@ -72,7 +69,10 @@ const FAQ = () => {
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-            We offer a number of wallet connections for minting, but MetaMask is the recommended wallet.
+          SAFU Badge means that the project cannot be manipulated by the developer to hurt investors and gain an unfair advantage over them. SAFU badge will be given to KYCed projects that meet below specifications and ownership held by SAFU Developer.
+          </p>
+          <p className='faq__list-item-paragraph'>
+          Read more by following link <a href="https://docs.pinksale.finance/important/safu-contract">https://docs.pinksale.finance/important/safu-contract</a>
           </p>
         </details>
         <details className='faq__list-item'>
@@ -80,7 +80,7 @@ const FAQ = () => {
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-            We offer a number of wallet connections for minting, but MetaMask is the recommended wallet.
+            Yes, our partner in public sale Pink Sale awarded us the SAFU badge, showing our project full confidence.
           </p>
         </details>
       </div>

@@ -78,10 +78,7 @@ const Roadmap = () => {
               <circle cx="8" cy="7.5" r="6" stroke="white" strokeWidth="3"/>
             </svg>
             <p className="roadmap__text">
-              <span>Deposit Balance.</span> To get access
-              to the platform you have to be
-              the holder <span>$ETF</span> tokens, verify
-              by connecting your wallet. “+” button at the top of the screen.
+              <span>Deposit Balance.</span> To start playing you need to make a deposit by clicking on the blue plus sign on top of the site.
             </p>
           </div>
           <div className="roadmap__item-image">
@@ -94,10 +91,7 @@ const Roadmap = () => {
               <circle cx="8" cy="7.5" r="6" stroke="white" strokeWidth="3"/>
             </svg>
             <p className="roadmap__text">
-              <span>Find &amp; Create Game.</span> Once your
-              tokens are deposited, choose
-              the lobby or create one. “Head
-              or Tail” wait till game starts.
+              <span>Find &amp; Create Game.</span> Once your tokens are deposited, choose the lobby or create one. Wait till game starts and enjoy your honest battle.
             </p>
           </div>
           <div className="roadmap__item-image">
@@ -110,7 +104,7 @@ const Roadmap = () => {
               <circle cx="8" cy="7.5" r="6" stroke="white" strokeWidth="3"/>
             </svg>
             <p className="roadmap__text">
-              <span>Join Platform.</span> First you connect your wallet. Deposit your tokens to the platform using “+” button at the top of the screen.
+              <span>Finish Game.</span> As soon as you win, you will have a winning screen and a &quot;collect prize&quot; button, as soon as you click it, the tokens you won will be sent to your wallet and you will be returned to the main menu.
             </p>
           </div>
           <div className="roadmap__item-image">
@@ -123,8 +117,7 @@ const Roadmap = () => {
               <circle cx="8" cy="7.5" r="6" stroke="white" strokeWidth="3"/>
             </svg>
             <p className="roadmap__text">
-              <span>Join Platform.</span> First you connect your wallet. Deposit your tokens to the platform using “+” button at the top of the screen.
-            </p>
+              <span>Leaderboards.</span> In the leaderboard section, you will be able to see your statistics, winning percentage, total turnover, and so on.            </p>
           </div>
           <div className="roadmap__item-image">
             <img src="roadmap_4.png" alt="roadmap join 2" />
