@@ -74,6 +74,10 @@
         flex-wrap: nowrap;
         flex-direction: row;
 
+        &:focus{
+          outline: none;
+        }
+
         @include mobile {
           padding: 20px 60px 20px 20px;
         }

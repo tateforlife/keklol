@@ -7,12 +7,75 @@
   padding: 20px 30px 60px;
   width: calc(100% - 60px);
 
+  a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.1s linear;
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover,
+    &:active {
+      color: #34BBFF;
+    }
+  }
+
   @include tablet {
     padding: 60px 30px;
   }
 
   @include mobile {
     padding: 30px;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 200px;
+    align-items: center;
+  }
+
+  &__menu {
+    position: relative;
+  }
+
+  &__menu-item {
+    position: relative;
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+    min-width: 120px;
+
+    &:first-of-type {
+      margin-bottom: 20px;
+
+      a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #637298;
+      }
+    }
+
+    &:not(:first-of-type) {
+      position: relative;
+      color: white;
+      font-size: 14px;
+      line-height: 21px;
+      padding: 7.5px 0;
+    }
+  }
+
+  &__divider {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    background: -webkit-linear-gradient(left, #19D6E2, #9960FF);
+    bottom: -8px;
   }
 
   &__buttons {
@@ -153,7 +216,6 @@
     margin-top: 20px;
     display: flex;
     width: 100%;
-    justify-content: center;
     &-heading {
       font-weight: 800;
       font-size: 32px;
