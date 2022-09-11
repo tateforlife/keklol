@@ -1,5 +1,6 @@
 .carousel {
   width: 100%;
+  position: relative;
     
   @include tablet {
     
@@ -22,7 +23,8 @@
 
     @include tablet {
       order: 0;
-      width: auto;
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -40,7 +42,7 @@
     max-width: 1260px;
     margin-top: 50px;
     width: calc(100% - 60px);
-    padding: 0 30px;
+    padding: 0 30px 20px;
 
     @include tablet {
       width: calc(100% - 40px);
@@ -149,5 +151,37 @@
 
   .slick-dots {
     display: flex !important;
+  }
+
+  .slick-dots li {
+    background: transparent;
+  }
+
+  .slick-dots li button:before {
+    font-size: 40px;
+    opacity: 1;
+    color: #637298;
+  }
+
+  .slick-dots li.slick-active button:before {
+    font-size: 24px;
+    opacity: 1;
+    color: #202742;
+    z-index: 1;
+    display: none;
+
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+
+  .slick-dots li.slick-active button:after {
+    content: "";
+    background: url('carousel_active.svg');
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 16px;
+    top: 17px;
   }
 }

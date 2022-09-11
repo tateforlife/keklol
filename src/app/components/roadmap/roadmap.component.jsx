@@ -28,10 +28,15 @@ const Roadmap = () => {
 
   return (
     <div className='roadmap'>
+      <div className="kek"></div>
       <div className="roadmap__content">
-        <svg className='roadmap__tree' xmlns="http://www.w3.org/2000/svg" width="91" height="3047" viewBox="0 0 91 3047" fill="none">
+        {/* <svg className='roadmap__tree' xmlns="http://www.w3.org/2000/svg" width="91" height="3047" viewBox="0 0 91 3047" fill="none">
           <line x1="1.5" y1="-6.55671e-08" x2="1.50013" y2="3047" stroke="white" strokeWidth="3"/>
           <path d="M2 297L79.9757 422.604C85.8743 432.105 89 443.066 89 454.25V457M2 2949L74.8259 2862.83C83.9785 2852 89 2838.28 89 2824.1L89 2697M89 498.5L89 847.5M89 893.5L89 1493.5M89 1538L89 2089M89 2134L89 2652" stroke="white" strokeWidth="3"/>
+        </svg> */}
+        <svg className='roadmap__tree' width="91" height="3527" viewBox="0 0 91 3527" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="1.5" y1="6.55671e-08" x2="1.49985" y2="3527" stroke="white" strokeWidth="3"/>
+          <path d="M2 257L82.4835 415.29C86.7672 423.715 89 433.033 89 442.484V452.354M2 3495L78.3341 3384.72C85.2793 3374.69 89 3362.78 89 3350.57L89 3249.48M89 503.025L89 848.836M89 905L89 1389M89 1443.33L89 2036.56M89 2091.5L89 2632M89 2686.94L89 3194.5" stroke="white" strokeWidth="3"/>
         </svg>
         <div className="roadmap__platform">
           <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +68,7 @@ const Roadmap = () => {
             </p>
           </div>
           <div className="roadmap__item-image">
-            <img src="roadmap_1.png" alt="roadmap deposit" />
+            <img src="roadmap_0.png" alt="roadmap connect" />
           </div>
         </div>
         <div className="roadmap__item roadmap__item--1 reveal">
