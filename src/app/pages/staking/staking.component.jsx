@@ -12,6 +12,11 @@ const StakingComponent = ({
   setCurrentAccount,
 }) => {
   const [item, setItem] = React.useState(0);
+  const [isSubscribed, setIsSubscribed] = React.useState(false);
+
+  const handleChange = () => {
+    setIsSubscribed(current => !current);
+  };
 
   return (
     <section className='staking'>
@@ -75,6 +80,32 @@ const StakingComponent = ({
               <p className="staking__option-description">
                 135% APY
               </p>
+            </div>
+          </div>
+          <div className="staking__info">
+            <div className="staking__info-left">
+              <h4 className="staking__info-heading">Information about your choice</h4>
+              <div className="staking__info-items">
+                <div className="staking__info-item">
+                  <span>Days staking:</span> 30 Days
+                </div>
+                <div className="staking__info-item">
+                  <span>APY (%):</span> 10%
+                </div>
+                <div className="staking__info-item">
+                  <span>Unlocking date:</span> 18 October, 2022
+                </div>
+              </div>
+            </div>
+            <div className="staking__info-right">
+              <input defaultValue={0} id="subscribe"
+                name="subscribe" className='staking__input' type="number" />
+              <label className="form-control">
+                <input value={isSubscribed}
+                  onChange={(e) => handleChange(e)} className='staking__checkbox' type="checkbox" />
+                By clicking this box, you confirm CFC coin staking agreement.
+              </label>
+              <button className='staking__button' disabled={!isSubscribed}>Approve</button>
             </div>
           </div>
         </div>
