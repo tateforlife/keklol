@@ -23,6 +23,7 @@ import { getPresaleStatus, getPublicStatus, getRaffleStatus } from '../contract/
 import environment from '../environment/environment';
 import Web3Modal, { providers as web3Providers } from 'web3modal'
 import { providers } from 'ethers'
+import StakingComponent from './pages/staking/staking.component';
 
 const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/v3/2c2e371df87b41e4bed3c5fbd628ed9d'));
 const contractAddress = '0x8cEBCF6620a4B77de67628593Cb5ae67f956CA45';
@@ -383,6 +384,12 @@ const App = () => {
             setCurrentAccount={connect}
           />
         } />
+        <Route path="staking" exact element={
+          <StakingComponent
+            currentAccount={currentAccount}
+            setCurrentAccount={connect}
+          />}>
+        </Route>
         <Route path="mint" exact element={
           <MintPageComponent
             raffleActive={raffleStatus}

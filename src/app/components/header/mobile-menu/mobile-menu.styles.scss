@@ -82,6 +82,7 @@
     @include tablet {
       display: flex;
       flex-direction: column;
+      background: #202742;
     }
 
     &--visible {
