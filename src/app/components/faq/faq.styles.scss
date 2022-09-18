@@ -96,14 +96,14 @@
         align-items: center;
         flex-wrap: nowrap;
         flex-direction: row;
-        width: calc(100% - 40px);
+        width: calc(100% - 80px);
 
         &:focus{
           outline: none;
         }
 
         @include mobile {
-          padding: 20px 20px 20px 20px;
+          padding: 20px 60px 20px 20px;
         }
 
         &:-webkit-direct-focus {
@@ -126,9 +126,9 @@
           transition: all .25s ease;
           transform: rotate(0deg);
           margin-left: 20px;
-          position: relative;
-          // position: absolute;
-          // right: 20px;
+          // position: relative;
+          position: absolute;
+          right: 20px;
         }
 
         // &::after {
