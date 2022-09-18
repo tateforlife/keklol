@@ -7,6 +7,24 @@
   padding: 20px 30px 60px;
   width: calc(100% - 60px);
   z-index: 1;
+  background: rgba(32, 39, 66, 0.5);
+
+  &__back {
+    position: absolute;
+    top: 0;
+    margin: 0 !important;
+
+    &-2 {
+      top: 40%;
+      left: 10%;
+      position: absolute;
+      height: 900px;
+
+      // @include tablet {
+      //   display: none;
+      // }
+    }
+  }
 
   a {
     color: white;
@@ -57,7 +75,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
-        color: #637298;
+        color: white;
       }
     }
 

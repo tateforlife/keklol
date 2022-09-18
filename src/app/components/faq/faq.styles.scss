@@ -12,15 +12,13 @@
     margin: 0 !important;
 
     &-2 {
-      top: 40%;
-      left: 10%;
       position: absolute;
-      height: 900px;
-  
+      bottom: -441px;
+      width: 100%;
 
-      // @include tablet {
-      //   display: none;
-      // }
+      @include tablet {
+        display: none;
+      }
     }
   }
 
