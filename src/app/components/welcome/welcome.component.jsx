@@ -11,7 +11,7 @@ const Welcome = () => {
       </MediaQuery>
       <div className="welcome__wrapper">
         <div className="welcome__content">
-          <h1 className="welcome__heading">Coin Flip <br/> Web3 Platform</h1>
+          <h1 className="welcome__heading">CoinFlip <br/> Web3 Platform</h1>
           <p className="welcome__description">
             Built by the leading Web3 developers of the crypto industry, $CFC is a multi-directional platform for coin flip, games, jackpots, staking and much more. Connect and start winning.
           </p>

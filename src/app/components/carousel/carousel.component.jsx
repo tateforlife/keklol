@@ -10,7 +10,7 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     appendDots: (dots) => <ul>{dots}</ul>,
   };
 
@@ -165,7 +165,7 @@ const Carousel = () => {
                   <div className="carousel__divider"></div>
                 </a>
                 <p className="carousel__paragraph">
-                  <span>Verified by the pink sale platform and received the SAFU ticker.</span> CoinFlip is an absolutely safe project for investment.</p>
+                  <span>Verified by the PinkSale platform and received the SAFU ticker.</span> CoinFlip is an absolutely safe project for investment.</p>
               </div>
             </div>
           </div>

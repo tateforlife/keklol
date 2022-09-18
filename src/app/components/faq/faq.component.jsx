@@ -57,24 +57,24 @@ const FAQ = () => {
       </h3>
       <div className='faq__list'>
         <details className='faq__list-item'>
-          <summary>What is Coin Flip? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <summary>What is CoinFlip? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg>
           </summary>
           <p className='faq__list-item-paragraph'>
-            Coin Flip is a web 3.0 level game that allows you to win, earn, stake and participate in games with players around the world.
+            CoinFlip is a web 3.0 level game that allows you to win, earn, stake and participate in games with players around the world.
           </p>
         </details>
         <details className='faq__list-item'>
-          <summary>What is Coin Flip ($CFC) Token? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <summary>What is CoinFlip ($CFC) Token? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-            In simple words, Coin Flip coin is the main engine in all project processes: 1in1 game, jackpot, staking, rewards, and so on - all this functions only on the $CFC token, making the coin indispensable for playing and earning along with Coin Flip platform.
+            In simple words, CoinFlip coin is the main engine in all project processes: 1in1 game, jackpot, staking, rewards, and so on - all this functions only on the $CFC token, making the coin indispensable for playing and earning along with CoinFlip platform.
           </p>
         </details>
         <details className='faq__list-item'>
-          <summary>How to buy Coin Flip ($CFC) Token? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <summary>How to buy CoinFlip ($CFC) Token? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
@@ -82,11 +82,11 @@ const FAQ = () => {
           </p>
         </details>
         <details className='faq__list-item'>
-          <summary>Is Coin Flip team verified? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <summary>Is CoinFlip team verified? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-          Yes, Coin Flip team has been KYC verified by trusted verification partner “HZ KTO”. Please find more information regarding KYC report in &quot;Team KYC&quot; whitepaper section.
+          Yes, CoinFlip team has been KYC verified by trusted verification partner “HZ KTO”. Please find more information regarding KYC report in &quot;Team KYC&quot; whitepaper section.
           </p>
         </details>
         <details className='faq__list-item'>
@@ -98,11 +98,11 @@ const FAQ = () => {
           </p>
         </details>
         <details className='faq__list-item'>
-          <summary>Is Coin Flip&quot;s contract audited? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <summary>Is CoinFlip&quot;s contract audited? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-          Yes, Coin Flip have safe smart contract that has been audited by HZ KTO. Please find more information regarding KYC report in &quot;Smart-contract&quot; whitepaper section.
+          Yes, CoinFlip have safe smart contract that has been audited by HZ KTO. Please find more information regarding KYC report in &quot;Smart-contract&quot; whitepaper section.
           </p>
         </details>
         <details className='faq__list-item'>
@@ -117,11 +117,11 @@ const FAQ = () => {
           </p>
         </details>
         <details className='faq__list-item'>
-          <summary>Is it safe to invest in Coin Flip (SAFU)? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <summary>Is it safe to invest in CoinFlip (SAFU)? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-            Yes, our partner in public sale Pink Sale awarded us the SAFU badge, showing our project full confidence.
+            Yes, our partner in public sale PinkSale awarded us the SAFU badge, showing our project full confidence.
           </p>
         </details>
       </div>

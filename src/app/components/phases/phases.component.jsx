@@ -65,7 +65,7 @@ const Phases = () => {
                         <div className="phases__divider"></div>
                       </h4>
                       <p className="phases__paragraph">
-                - Presenting innovative Web3 coin flip project
+                - Presenting innovative Web3 CoinFlip project
                       </p>
                       <p className="phases__paragraph">
                 - Presenting roadmap &amp; Ecosystem sketch
@@ -146,7 +146,7 @@ const Phases = () => {
                     - Private Sale
                       </p>
                       <p className="phases__paragraph">
-                    - Public Sale on Pink Sale
+                    - Public Sale on PinkSale
                       </p>
                       <p className="phases__paragraph">
                     - CoinMarketCap &amp; CoinGecko Listing
@@ -319,7 +319,7 @@ const Phases = () => {
                     <div className="phases__divider"></div>
                   </h4>
                   <p className="phases__paragraph">
-                - Presenting innovative Web3 coin flip project
+                - Presenting innovative Web3 CoinFlip project
                   </p>
                   <p className="phases__paragraph">
                 - Presenting roadmap &amp; Ecosystem sketch
@@ -452,7 +452,7 @@ const Phases = () => {
                 - Private Sale
                   </p>
                   <p className="phases__paragraph">
-                - Public Sale on Pink Sale
+                - Public Sale on PinkSale
                   </p>
                   <p className="phases__paragraph">
                 - CoinMarketCap &amp; CoinGecko Listing

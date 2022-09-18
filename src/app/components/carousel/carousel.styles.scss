@@ -191,4 +191,23 @@
     left: 16px;
     top: 17px;
   }
+
+  .slick-next,
+  .slick-prev {
+    background: linear-gradient(103.32deg, #9A68F3 0%, #09BECA 100%);
+    border-radius: 10px;
+    z-index: 100;
+
+    @include tablet {
+      display: none !important;
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
 }
