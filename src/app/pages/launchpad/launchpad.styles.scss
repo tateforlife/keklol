@@ -1,0 +1,326 @@
+.launchpad {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  background: #202742;
+
+  @include tablet {
+
+  }
+
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__feature {
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    & > svg {
+      position: relative;
+      top: -2px;
+      margin-right: 10px;
+    }
+
+    @include tablet {
+      width: initial;
+    }
+  }
+
+  &__feature-text {
+    margin: 10px 0;
+    font-size: 14px;
+
+    @include tablet {
+      margin: 8px 0;
+    }
+  }
+
+  &__head {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    color: #FFFFFF;
+    margin: 20px auto 20px;
+    text-align: left;
+
+    @include tablet {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    span {
+      background: linear-gradient(left, #19D6E2, #9960FF);
+      background: -webkit-linear-gradient(left, #19D6E2, #9960FF);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  
+  &__button {
+    max-width: 165px;
+    background: linear-gradient(93.74deg, #09BECA -12.52%, #9A68F3 125.6%);
+    border-radius: 10px;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 1;
+    border: 0;
+    cursor: pointer;
+    width: 25%;
+    margin-left: 20px;
+
+    @include tablet {
+      margin-left: 10px;
+    }
+  }
+
+  &__input {
+    background: #393F5A;
+    box-shadow: 0px 4px 10px rgb(38 47 91 / 50%);
+    border-radius: 10px;
+    border: 0;
+    padding: 14px 20px;
+    color: white;
+    max-height: 46px;
+    width: 75%;
+  }
+
+  &__para {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 20px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1260px;
+    width: calc(100% - 60px);
+    padding: 50px 30px 60px;
+    justify-content: space-between;
+
+    @include tablet {
+      width: calc(100% - 40px);
+      padding: 0 20px;
+      margin: 0;
+      flex-direction: column-reverse;
+      z-index: 1;
+    }
+  }
+
+  &__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__right {
+    width: 50%;
+    position: relative;
+
+    & > img {
+      position: absolute;
+      max-width: 180%;
+      max-height: 180%;
+      top: -300px;
+      right: -25%;
+      z-index: 1111;
+      pointer-events: none;
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__timer {
+    background: rgba(57, 63, 90, 0.5);
+    box-shadow: 0px 5px 20px rgba(15, 20, 70, 0.25);
+    padding: 50px 80px 80px;
+    position: relative;
+    z-index: 1111;
+    // border: 1px solid rgba(154, 104, 243, 0.5);
+    
+    border: 1px solid rgba(9, 190, 202, 0.5);
+
+    // border: 2px solid transparent;
+    border-radius: 10px;
+    // background-clip: padding-box;
+
+    // &::after {
+    //   position: absolute;
+    //   top: -2px;
+    //   bottom: -2px;
+    //   left: -2px;
+    //   right: -2px;
+    //   background: linear-gradient(#09BECA
+    //   , #9A68F3);
+    //   content: '';
+    //   z-index: -1;
+    //   border-radius: 10px;
+    // }
+
+    @include tablet {
+      padding: 50px 30px 50px;
+    }
+  }
+
+  &__progress-1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px;
+  }
+
+  &__progress-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 0;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__timer-heading {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+
+    @include tablet {
+      margin: 0 0 30px;
+    }
+  }
+
+  &__timer-wrapper {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 20px;
+    }
+  }
+
+  &__timer-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &:not(:first-of-type) {
+      margin-left: 10px;
+
+      @include tablet {
+        margin: 0;
+      }
+    }
+  }
+
+  &__timer-kek {
+    background: #202742;
+    box-shadow: 0px 4px 10px rgba(38, 47, 91, 0.5);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+    padding: 14px 20px;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFFFF;
+  }
+
+  &__timer-name {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  // Color Variables ======================================
+$green: #75b800;
+$gray-light: #eef1f3;
+
+// Bar Variables ========================================
+$bar-size: 4px;
+$bar-radius: 60px;
+$bar-bg: rgba(0, 0, 0, 0.075);
+
+body {
+  background: $gray-light;
+}
+
+// Animation =============================================
+// Edit these at random intervals to change the animation.
+@keyframes loader {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 11%;
+  }
+}
+
+// Bar ============================================
+.progress-bar {
+  border-radius: $bar-radius;
+  overflow: hidden;
+  width: 100%;
+
+  span {
+    display: block;
+  }
+}
+
+.bar {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.progress {
+  animation: loader 2s ease forwards;
+  // Change the animation fill mode 'infinite' to 'forwards' to stop the animation from repeating.
+  background: #fff;
+  color: #fff;
+  padding: $bar-size;
+  width: 0;
+}
+}

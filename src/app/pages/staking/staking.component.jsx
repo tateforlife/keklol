@@ -187,7 +187,7 @@ const StakingComponent = ({
                   </radialGradient>
                 </defs>
               </svg>
-              <input defaultValue={0} id="subscribe"
+              <input defaultValue={0.5} id="subscribe"
                 name="subscribe" className='staking__input' type="number" />
               <label className="form-control">
                 <input value={isSubscribed}

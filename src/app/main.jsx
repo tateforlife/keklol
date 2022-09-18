@@ -14,7 +14,7 @@ import 'normalize.css';
 import './main.scss';
 
 import HomePageComponent from './pages/home/home.component';
-import MintPageComponent from './pages/mint/mint.component';
+import LaunchpadComponent from './pages/launchpad/launchpad.component';
 
 import createStarfield from './misc/starfield';
 import WalletConnectProvider from '@walletconnect/web3-provider'
@@ -386,6 +386,12 @@ const App = () => {
         } />
         <Route path="mint" exact element={
           <StakingComponent
+            currentAccount={currentAccount}
+            setCurrentAccount={connect}
+          />}>
+        </Route>
+        <Route path="launchpad" exact element={
+          <LaunchpadComponent
             currentAccount={currentAccount}
             setCurrentAccount={connect}
           />}>
