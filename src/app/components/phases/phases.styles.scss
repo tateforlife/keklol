@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 0 80px;
+  padding: 50px 0 90px;
   background: #393F5A;
 
   @include tablet {
@@ -100,8 +100,7 @@
     @include tablet {
       width: 100%;
       flex-direction: column;
-      align-items: flex-start;
-      border-left: 3px solid white;
+      align-items: center;
 
       &:not(:last-of-type) {
         padding-bottom: 100px;
@@ -143,6 +142,7 @@
 
     @include tablet {
       min-height: initial;
+      padding: 0;
       width: calc(100% - 60px);
     }
   }
@@ -206,5 +206,43 @@
     .phases__heading--small {
       margin: 20px 0 0;
     }
+  }
+
+  .slick-dots {
+    display: flex !important;
+    position: absolute;
+    bottom: -60px;
+  }
+
+  .slick-dots li {
+    background: transparent;
+  }
+
+  .slick-dots li button:before {
+    font-size: 40px;
+    opacity: 1;
+    color: #637298;
+  }
+
+  .slick-dots li.slick-active button:before {
+    font-size: 24px;
+    opacity: 1;
+    color: #202742;
+    z-index: 1;
+    display: none;
+
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+
+  .slick-dots li.slick-active button:after {
+    content: "";
+    background: url('carousel_active.svg');
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 16px;
+    top: 17px;
   }
 }
