@@ -5,10 +5,34 @@
   margin: 0 auto;
   padding: 0;
   align-items: center;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   @include tablet {
     // overflow-x: initial;
+  }
+
+  #mybtn {
+    z-index: 10000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    transition: all .5s;
+
+    @include tablet {
+      bottom: 0;
+      right: 0;
+    }
+
+    svg {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &__roadmap {

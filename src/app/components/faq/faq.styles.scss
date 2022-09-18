@@ -11,6 +11,10 @@
     top: 0;
     margin: 0 !important;
 
+    @include tablet {
+      width: 100%;
+    }
+
     &-2 {
       position: absolute;
       bottom: -441px;

@@ -6,6 +6,9 @@ import './welcome.styles.scss';
 const Welcome = () => {
   return (
     <div className='welcome'>
+      <MediaQuery maxWidth={1024}>
+        <img className='welcome__grad' src="welcome_gradient_2.png" alt="welcome gradient" />
+      </MediaQuery>
       <div className="welcome__wrapper">
         <div className="welcome__content">
           <h1 className="welcome__heading">Coin Flip <br/> Web3 Platform</h1>
@@ -64,7 +67,9 @@ const Welcome = () => {
         </div>
         <div className="welcome__notebook">
           <img className='reveal' src="welcome_mac.png" alt="welcome notebook" onLoad={(e) => console.log(e.target.classList.add('active')) } />
-          <img src="welcome_gradient_2.png" alt="welcome gradient" />
+          <MediaQuery minWidth={1025}>
+            <img src="welcome_gradient_2_old.png" alt="welcome gradient" />
+          </MediaQuery>
           {/* <img src="web.png" alt="welcome gradient" /> */}
         </div>
       </div>

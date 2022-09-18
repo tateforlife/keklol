@@ -77,6 +77,7 @@
     pointer-events: none;
     transition: opacity .15s linear;
     margin-top: 100px;
+    background: #202742;
 
     @include tablet {
       display: flex;
@@ -87,6 +88,7 @@
       overflow: auto;
       pointer-events: all;
       opacity: 1;
+      background: #202742;
     }
     
     background: $body-background-color;

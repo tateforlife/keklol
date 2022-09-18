@@ -1,8 +1,16 @@
 .welcome {
   background: #202742;
+  position: relative;
   width: 100%;
   @include tablet {
     
+  }
+
+  &__grad {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: -22%;
   }
 
   &__wrapper {
@@ -104,6 +112,11 @@
 
         @include tablet {
           z-index: 1;
+          pointer-events: none;
+          top: -90%;
+          left: -20px;
+          transform: scale(1);
+          width: 100vw;
         }
       }
     }
