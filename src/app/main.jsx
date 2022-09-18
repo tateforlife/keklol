@@ -384,13 +384,13 @@ const App = () => {
             setCurrentAccount={connect}
           />
         } />
-        <Route path="staking" exact element={
+        <Route path="mint" exact element={
           <StakingComponent
             currentAccount={currentAccount}
             setCurrentAccount={connect}
           />}>
         </Route>
-        <Route path="mint" exact element={
+        {/* <Route path="mint" exact element={
           <MintPageComponent
             raffleActive={raffleStatus}
             publicActive={publicActive}
@@ -408,7 +408,7 @@ const App = () => {
             callMod={callMod}
             callOg={callOg}
           />
-        } />
+        } /> */}
       </Routes>
     </Router>
   );
