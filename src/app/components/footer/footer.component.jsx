@@ -15,10 +15,7 @@ const Footer = () => {
               <Logo />
               <div className="footer__buttons">
                 <button className='footer__button'>
-                  Private Sale
-                </button>
-                <button className='footer__button-inverse'>
-                  Whitepaper
+                  Join Now
                 </button>
               </div>
               <Social />
@@ -28,13 +25,6 @@ const Footer = () => {
                 <div className="footer__menu-item"><div className="footer__divider"></div><a href="#">Home</a></div>
                 <div className="footer__menu-item"><a href="#">Staking</a></div>
                 <div className="footer__menu-item"><a href="#">Key Features</a></div>
-                <div className="footer__menu-item"><a href="#">Roadmap</a></div>
-                <div className="footer__menu-item"><a href="#">Partners</a></div>
-              </div>
-              <div className="footer__menu">
-                <div className="footer__menu-item"><div className="footer__divider"></div><a href="#">Whitepaper</a></div>
-                <div className="footer__menu-item"><a href="#">What is CoinFlip?</a></div>
-                <div className="footer__menu-item"><a href="#">Launch date</a></div>
                 <div className="footer__menu-item"><a href="#">Roadmap</a></div>
                 <div className="footer__menu-item"><a href="#">Partners</a></div>
               </div>

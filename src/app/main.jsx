@@ -390,12 +390,12 @@ const App = () => {
             setCurrentAccount={connect}
           />}>
         </Route>
-        <Route path="launchpad" exact element={
+        {/* <Route path="launchpad" exact element={
           <LaunchpadComponent
             currentAccount={currentAccount}
             setCurrentAccount={connect}
           />}>
-        </Route>
+        </Route> */}
         {/* <Route path="mint" exact element={
           <MintPageComponent
             raffleActive={raffleStatus}

@@ -10,12 +10,6 @@ const Menu = () => {
           const event = new Event('kek');
           document.dispatchEvent(event);
         }}>
-          <a href="#whitepaper">Whitepaper</a>
-        </li>
-        <li onClick={() => {
-          const event = new Event('kek');
-          document.dispatchEvent(event);
-        }}>
           <a href="/#features">Key Features</a>
         </li>
         <li onClick={() => {

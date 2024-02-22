@@ -37,10 +37,7 @@ const MobileMenu = () => {
           <Menu />
           <div className="mobile-menu__buttons">
             <button className='mobile-menu__button'>
-              Join Presale
-            </button>
-            <button className='mobile-menu__button-inverse'>
-              Whitepaper
+              Join Now
             </button>
           </div>
           <Social />

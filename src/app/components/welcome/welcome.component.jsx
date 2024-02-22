@@ -17,10 +17,7 @@ const Welcome = () => {
           </p>
           <div className="welcome__buttons">
             <button className='welcome__button'>
-            Private Sale
-            </button>
-            <button className='welcome__button-inverse'>
-            Whitepaper
+            Join Now
             </button>
           </div>
           <div className="welcome__stats">
@@ -35,10 +32,10 @@ const Welcome = () => {
                 </defs>
               </svg>
               <h2 className="welcome__heading--small">
-                9 Oct
+                22 Feb
               </h2>
               <h5 className="welcome__description--small">
-                Private Sale
+                Join Now
               </h5>
             </div>
             <div className="welcome__supply">

@@ -78,15 +78,7 @@ const FAQ = () => {
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-            $CFC can be purchased or sold on our partnered DEX Pancakeswap and the liquidity pair will be CFC/BNB.
-          </p>
-        </details>
-        <details className='faq__list-item'>
-          <summary>Is CoinFlip team verified? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
-          </svg></summary>
-          <p className='faq__list-item-paragraph'>
-          Yes, CoinFlip team has been KYC verified by trusted verification partner “HZ KTO”. Please find more information regarding KYC report in &quot;Team KYC&quot; whitepaper section.
+            $CFC can be purchased or sold on our partnered DEX Pancakeswap and the liquidity pair will be CFC/SOL.
           </p>
         </details>
         <details className='faq__list-item'>
@@ -97,15 +89,7 @@ const FAQ = () => {
           We sustain the APY of our token distribution phase through hardwired taxes, fees and external revenues.
           </p>
         </details>
-        <details className='faq__list-item'>
-          <summary>Is CoinFlip&quot;s contract audited? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
-          </svg></summary>
-          <p className='faq__list-item-paragraph'>
-          Yes, CoinFlip have safe smart contract that has been audited by HZ KTO. Please find more information regarding KYC report in &quot;Smart-contract&quot; whitepaper section.
-          </p>
-        </details>
-        <details className='faq__list-item'>
+        {/* <details className='faq__list-item'>
           <summary>What is SAFU? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
@@ -115,15 +99,15 @@ const FAQ = () => {
           <p className='faq__list-item-paragraph'>
           Read more by following link <a href="https://docs.pinksale.finance/important/safu-contract">https://docs.pinksale.finance/important/safu-contract</a>
           </p>
-        </details>
-        <details className='faq__list-item'>
+        </details> */}
+        {/* <details className='faq__list-item'>
           <summary>Is it safe to invest in CoinFlip (SAFU)? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
             Yes, our partner in public sale PinkSale awarded us the SAFU badge, showing our project full confidence.
           </p>
-        </details>
+        </details> */}
       </div>
     </div>
   );

@@ -23,10 +23,9 @@ const Partners = () => {
             </h3>
             <a className='partners__link' href='#'>
               <div className="partners__divider"></div>
-              Read more in Whitepaper
-              <svg className='more-arrow' width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* <svg className='more-arrow' width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.7281 8.70711C9.11863 8.31658 9.11863 7.68342 8.7281 7.29289L2.36414 0.928932C1.97362 0.538408 1.34045 0.538408 0.949928 0.928932C0.559404 1.31946 0.559404 1.95262 0.949928 2.34315L6.60678 8L0.949928 13.6569C0.559404 14.0474 0.559404 14.6805 0.949928 15.0711C1.34045 15.4616 1.97362 15.4616 2.36414 15.0711L8.7281 8.70711ZM7.021 9H8.021V7H7.021V9Z" fill="white"/>
-              </svg>
+              </svg> */}
             </a>
             <p className="partners__paragraph">
               <span>Partnerships with Top Tier CEX.</span> Blogs, news tabloids and world-class influencers. You can read more about this in the Partnerships &amp; Marketing section.</p>
@@ -89,7 +88,7 @@ const Partners = () => {
               </div>
             </div>
             <button className='partners__button'>
-              Private Sale
+              Join Now
             </button>
           </div>
           <MediaQuery maxWidth={1024}>

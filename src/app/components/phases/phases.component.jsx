@@ -134,22 +134,13 @@ const Phases = () => {
                         <div className="phases__divider"></div>
                       </h4>
                       <p className="phases__paragraph">
-                    - Team KYC
+                    - Launch Start (22 Feb)
                       </p>
                       <p className="phases__paragraph">
-                    - Contract Audit
+                    - Dex Tranding
                       </p>
                       <p className="phases__paragraph">
-                    - Private Launchpad Marketing
-                      </p>
-                      <p className="phases__paragraph">
-                    - Private Sale
-                      </p>
-                      <p className="phases__paragraph">
-                    - Public Sale on PinkSale
-                      </p>
-                      <p className="phases__paragraph">
-                    - CoinMarketCap &amp; CoinGecko Listing
+                    - Dexscreener Update
                       </p>
                     </div>
                   </div>
@@ -440,22 +431,13 @@ const Phases = () => {
                 Phase 2
                   </h4>
                   <p className="phases__paragraph">
-                - Team KYC
+                - Launch Start (22 Feb)
                   </p>
                   <p className="phases__paragraph">
-                - Contract Audit
+                - Dex Tranding
                   </p>
                   <p className="phases__paragraph">
-                - Private Launchpad Marketing
-                  </p>
-                  <p className="phases__paragraph">
-                - Private Sale
-                  </p>
-                  <p className="phases__paragraph">
-                - Public Sale on PinkSale
-                  </p>
-                  <p className="phases__paragraph">
-                - CoinMarketCap &amp; CoinGecko Listing
+                - Dexscreener Update
                   </p>
                 </div>
               </div>

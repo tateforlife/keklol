@@ -6,6 +6,7 @@ import './slider.css';
 
 import Header from '../../components/header/header.component';
 import Footer from '../../components/footer/footer.component';
+import useCountdownHook from '../../hooks/countdown.hook';
 
 const StakingComponent = ({
   currentAccount,
@@ -13,6 +14,9 @@ const StakingComponent = ({
 }) => {
   const [item, setItem] = React.useState(0);
   const [isSubscribed, setIsSubscribed] = React.useState(false);
+  const { splitItems } = useCountdownHook('Feb 23, 2024 23:00:00 UTC-0000');
+  // eslint-disable-next-line no-unused-vars
+  const [_, hours, minutes, seconds] = splitItems;
 
   const handleChange = () => {
     setIsSubscribed(current => !current);
@@ -40,7 +44,7 @@ const StakingComponent = ({
               </defs>
             </svg>
           </div>
-          <div className="staking__menu-item">
+          <div className="staking__menu-item disabled">
             <h5 className="staking__menu-heading">
               My Stake
             </h5>
@@ -93,7 +97,7 @@ const StakingComponent = ({
                   <span>APY (%):</span> 10%
                 </div>
                 <div className="staking__info-item">
-                  <span>Unlocking date:</span> 18 October, 2022
+                  <span>Unlocking date:</span> 22 February, 2024
                 </div>
               </div>
             </div>
@@ -194,7 +198,7 @@ const StakingComponent = ({
                   onChange={(e) => handleChange(e)} className='staking__checkbox' type="checkbox" />
                 By clicking this box, you confirm CFC coin staking agreement.
               </label>
-              <button className='staking__button' disabled={!isSubscribed}>Approve</button>
+              <button className='staking__button' disabled>{hours}:{minutes}:{seconds}</button>
             </div>
           </div>
         </div>

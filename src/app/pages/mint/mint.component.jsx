@@ -10,6 +10,7 @@ import './mint.styles.scss';
 import { getTotalSupply, mintMod, mintOG, mintPublic, mintRaffle, mintWL } from '../../../contract/ethereum';
 import Wallet from '../../components/header/wallet/wallet.component';
 import Social from '../../components/header/social/social.component';
+import useCountdownHook from '../../hooks/countdown.hook';
 
 const MintPageComponent = ({
   currentAccount,

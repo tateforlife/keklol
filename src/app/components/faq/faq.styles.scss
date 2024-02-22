@@ -5,6 +5,11 @@
   width: 100%;
   position: relative;
   background: #393F5A;
+  margin-bottom: 65px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
 
   &__back {
     position: absolute;

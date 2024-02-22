@@ -22,6 +22,7 @@
   }
 
   &__button {
+    font-family: monospace;
     max-width: 165px;
     background: linear-gradient(93.74deg, #09BECA -12.52%, #9A68F3 125.6%);
     border-radius: 10px;
@@ -169,6 +170,11 @@
     position: relative;
 
     padding: 0 15px;
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
   }
 
   &__menu-heading {

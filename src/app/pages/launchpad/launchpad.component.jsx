@@ -1,15 +1,54 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { arr as randomArray } from './arr';
+
 import './launchpad.styles.scss';
 
 import Header from '../../components/header/header.component';
 import Footer from '../../components/footer/footer.component';
+import useCountdownHook from '../../hooks/countdown.hook';
 
 const LaunchpadComponent = ({
   currentAccount,
   setCurrentAccount,
 }) => {
+  const { splitItems } = useCountdownHook('Feb 25, 2024 00:00:00 UTC-0200');
+  const [days, hours, minutes, seconds] = splitItems;
+  const [progress, setProgress] = React.useState(50);
+
+  const start = new Date('Feb 22, 2024 15:00:00 UTC-0200');
+  const end = new Date('Feb 23, 2024 01:00:00 UTC-0200');
+
+  function normalizeArray(arr, targetSum) {
+    const currentSum = arr.reduce((acc, num) => acc + num, 0);
+    const scaleFactor = targetSum / currentSum;
+    return arr.map((num) => num * scaleFactor);
+  }
+
+  Math.seed = 42;
+  const normalizedArray = normalizeArray(randomArray, 500);
+
+  // console.log('Normalized Array:', normalizedArray);
+  console.log('Sum of the Array:', normalizedArray.reduce((acc, num) => acc + num, 0));
+
+  const getProgress = (startDate, endDate) => {
+    const currentDate = new Date(Date.now());
+    const targetTimeZone = 'Europe/Riga';
+    const formattedDate = currentDate.toLocaleString('en-US', {
+      timeZone: targetTimeZone,
+    });
+    const formattedDateInSeconds = Math.floor(new Date(formattedDate).getTime());
+    const total = +endDate - +startDate;
+    const elaps = formattedDateInSeconds - start;
+    return ((elaps / total) * 100).toFixed(3);
+  };
+
+  React.useEffect(() => {
+    setProgress(getProgress(start, end));
+    console.log('Between dates %: ', getProgress(start, end))
+  }, [splitItems]);
+
   return (
     <section className='launchpad'>
       <Header
@@ -51,7 +90,7 @@ will be hosted on our private launchpad.
                 </defs>
               </svg>
               <p className="launchpad__feature-text">
-                Softcap: 99998 BNB
+                Softcap: 99998 SOL
               </p>
             </div>
             <div className="launchpad__feature">
@@ -65,7 +104,7 @@ will be hosted on our private launchpad.
                 </defs>
               </svg>
               <p className="launchpad__feature-text">
-                Hardcap: 99999 BNB
+                Hardcap: 99999 SOL
               </p>
             </div>
             <div className="launchpad__feature">
@@ -79,7 +118,7 @@ will be hosted on our private launchpad.
                 </defs>
               </svg>
               <p className="launchpad__feature-text">
-                Min Buy: 0.5 BNB
+                Min Buy: 0.5 SOL
               </p>
             </div>
             <div className="launchpad__feature">
@@ -93,7 +132,7 @@ will be hosted on our private launchpad.
                 </defs>
               </svg>
               <p className="launchpad__feature-text">
-                Max. Buy: 10 BNB
+                Max. Buy: 10 SOL
               </p>
             </div>
           </div>
@@ -105,7 +144,7 @@ will be hosted on our private launchpad.
             <div className="launchpad__timer-wrapper">
               <div className="launchpad__timer-item">
                 <div className="launchpad__timer-kek">
-                  15
+                  {days}
                 </div>
                 <div className="launchpad__timer-name">
                   Days
@@ -113,7 +152,7 @@ will be hosted on our private launchpad.
               </div>
               <div className="launchpad__timer-item">
                 <div className="launchpad__timer-kek">
-                  12
+                  {hours}
                 </div>
                 <div className="launchpad__timer-name">
                   Hours
@@ -121,7 +160,7 @@ will be hosted on our private launchpad.
               </div>
               <div className="launchpad__timer-item">
                 <div className="launchpad__timer-kek">
-                  36
+                  {minutes}
                 </div>
                 <div className="launchpad__timer-name">
                   Minutes
@@ -129,7 +168,7 @@ will be hosted on our private launchpad.
               </div>
               <div className="launchpad__timer-item">
                 <div className="launchpad__timer-kek">
-                  58
+                  {seconds}
                 </div>
                 <div className="launchpad__timer-name">
                   Seconds
@@ -139,27 +178,27 @@ will be hosted on our private launchpad.
           </div>
           <div className="launchpad__progress-1">
             <p className="launchpad__progress-name">
-              Raised - <span>55.64 BNB</span>
+              Raised - <span>55.64 SOL</span>
             </p>
             <p className="launchpad__progress-name">
-              Target - <span>500 BNB</span>
+              Target - <span>500 SOL</span>
             </p>
           </div>
-          <div className="progress-bar">
+          <div className="progress-bar" style={{'--bar-length': `${progress}%`}}>
             <span className="bar">
               <span className="progress"></span>
             </span>
           </div>
           <p className="launchpad__para">
-          The Private Sale will be completed as soon as 500 BNB is raised. <br/>
+          The Private Sale will be completed as soon as 500 SOL is raised. <br/>
 Click here to buy.
           </p>
           <div className="launchpad__progress-1">
             <p className="launchpad__progress-name">
-              <span>Min. Buy : 0.5 BNB</span>
+              <span>Min. Buy : 0.5 SOL</span>
             </p>
             <p className="launchpad__progress-name">
-              <span>Max. Buy : 10 BNB</span>
+              <span>Max. Buy : 10 SOL</span>
             </p>
           </div>
           <div className="launchpad__action">

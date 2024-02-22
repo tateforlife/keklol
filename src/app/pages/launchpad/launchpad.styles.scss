@@ -248,6 +248,7 @@
   }
 
   &__timer-kek {
+    font-family: monospace;
     background: #202742;
     box-shadow: 0px 4px 10px rgba(38, 47, 91, 0.5);
     border-radius: 10px;
@@ -283,6 +284,7 @@ $gray-light: #eef1f3;
 $bar-size: 4px;
 $bar-radius: 60px;
 $bar-bg: rgba(0, 0, 0, 0.075);
+--bar-length: 11%;
 
 body {
   background: $gray-light;
@@ -296,7 +298,7 @@ body {
   }
 
   100% {
-    width: 11%;
+    width: var(--bar-length);
   }
 }
 

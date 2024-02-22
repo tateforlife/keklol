@@ -48,6 +48,7 @@ const useCountdownHook = (input) => {
 
   return {
     date,
+    splitItems: (date && date.split(':')) || [],
   }
 };
 
