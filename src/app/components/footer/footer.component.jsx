@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
           <div className='footer__legal'>
             <p className='footer__legal-rights'>
-              © 2022 CoinFlip, Inc. All rights reserved.
+              © 2024 CoinFlip, Inc. All rights reserved.
             </p>
           </div>
         </div>
