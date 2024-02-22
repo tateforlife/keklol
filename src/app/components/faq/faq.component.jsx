@@ -78,7 +78,7 @@ const FAQ = () => {
             <path fillRule="evenodd" clipRule="evenodd" d="M13 0H7V7H0V13H7V20H13V13H20V7H13V0Z" fill="#9960FF"/>
           </svg></summary>
           <p className='faq__list-item-paragraph'>
-          Offical CA : TBA</p>
+          Offical CA : FLiPVthHkay1yfaEDN7mwj1oHDbKgoP2w7Q9w7gqFguq</p>
         </details>
         <details className='faq__list-item'>
           <summary>How can such high APY be sustainable? <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
