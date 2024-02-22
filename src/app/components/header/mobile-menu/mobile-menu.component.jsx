@@ -4,6 +4,7 @@ import Menu from '../menu/menu.component';
 import Social from '../social/social.component';
 
 import './mobile-menu.styles.scss';
+import environment from '../../../../environment/environment';
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -36,7 +37,7 @@ const MobileMenu = () => {
         <div className='mobile-menu__wrapper'>
           <Menu />
           <div className="mobile-menu__buttons">
-            <button className='mobile-menu__button'>
+            <button className='mobile-menu__button' onClick={() => location.href = environment.telegram}>
               Join Now
             </button>
           </div>

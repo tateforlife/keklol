@@ -384,7 +384,7 @@ const App = () => {
             setCurrentAccount={connect}
           />
         } />
-        <Route path="mint" exact element={
+        <Route path="staking" exact element={
           <StakingComponent
             currentAccount={currentAccount}
             setCurrentAccount={connect}

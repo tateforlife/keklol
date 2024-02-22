@@ -1,5 +1,6 @@
 import React from 'react';
 import MediaQuery from 'react-responsive'
+import environment from '../../../../src/environment/environment';
 
 import './welcome.styles.scss';
 
@@ -16,7 +17,7 @@ const Welcome = () => {
             Built by the leading Web3 developers of the crypto industry, $CFC is a multi-directional platform for coin flip, games, jackpots, staking and much more. Connect and start winning.
           </p>
           <div className="welcome__buttons">
-            <button className='welcome__button'>
+            <button className='welcome__button' onClick={() => location.href = environment.telegram}>
             Join Now
             </button>
           </div>
@@ -35,7 +36,7 @@ const Welcome = () => {
                 22 Feb
               </h2>
               <h5 className="welcome__description--small">
-                Join Now
+                Launch
               </h5>
             </div>
             <div className="welcome__supply">
