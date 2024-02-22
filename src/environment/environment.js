@@ -1,6 +1,7 @@
 const environment = {
+  telegram: 'https://t.me/coinflipsol',
   discord: 'https://discord.gg/ySp223qgRu',
-  twitter: 'https://twitter.com/AdventurerLarry/',
+  twitter: 'https://x.com/CoinFlipOnSol',
   instagram: 'https://www.instagram.com/nft.larry/',
   opensea: '',
   GET_PRESALE_PROOF_URL: 'https://larryland-api.onrender.com/getPresaleProof',
